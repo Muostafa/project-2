@@ -1,13 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import CoursesContainer from './components/CoursesContainer';
-import CourseCard from './components/CourseCard';
+import HomePage from './pages/HomePage'
+
 function App() {
   return (
     <div className="App">
-      <CoursesContainer/>
+      <HomePage></HomePage>
     </div> 
-  );
+  )
 }
-
 export default App;

@@ -53,7 +53,7 @@
   .courses-container > article > h3{
     font-size: x-large; font-weight: 600; padding: 0.5rem 0
   }
-  .courses-container > article{
+  .courses-container  article{
     text-align: start;
   }
   .explore-button {
@@ -118,6 +118,9 @@
     line-height: 1;
     letter-spacing: -0.02rem;
     font-size: 11px;
+  }
+  .python-article {
+    margin-bottom: 20px;
   }
   
   @media only screen and (max-width: 1300px) {
