@@ -1,9 +1,4 @@
-  .courses-box {
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-  }
-  .courses-pictures {
+   .coursesPictures {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +10,7 @@
     box-sizing: border-box;
     overflow-y: hidden;
   }
-  .course-content {
+  .courseContent {
     box-sizing: border-box;
     margin: auto;
     flex: 0 0 15%;
@@ -27,17 +22,24 @@
     height: 265px;
     background-color: white;
   }
-  .course-content > h3{
+  .courseContent > h3{
     font-size: 15px;
     font-weight: 600;
     margin: 3px 0;
     padding: 0;
   }
-  .course-content:hover {
+  .courseContent:hover {
     cursor: pointer;
   }
+  .border {
+    border: 1px solid #d1d7dc;
+    margin-bottom: 0;
+    padding: 0;
+    width: "240";
+    height: "135";
+  }
   /* Courses section */
-  .courses-container {
+  .coursesContainer {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -50,13 +52,13 @@
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
   }
-  .courses-container > article > h3{
+  .coursesContainer > article > h3{
     font-size: x-large; font-weight: 600; padding: 0.5rem 0
   }
-  .courses-container  article{
+  .coursesContainer  article{
     text-align: start;
   }
-  .explore-button {
+  .exploreButton {
     padding: 0 0.75rem; font-size: medium; font-weight: bold
   }
   
@@ -77,17 +79,17 @@
     line-height: 1.4;
     font-size: 11px;
   }
-  .course-rating {
+  .courseRating {
     display: flex;
   }
-  .rating-number {
+  .ratingNumber {
     color: #b4690e;
     font-size: 15px;
     font-weight: bolder;
     margin: 3px 0;
     padding: 0;
   }
-  .reviews-number {
+  .reviewsNumber {
     color: #6a6f73;
     font-size: 11px;
     font-weight: 400;
@@ -99,7 +101,7 @@
     align-self: center;
     padding: 0 4px;
   }
-  .course-title h3 {
+  .courseTitle h3 {
     font-size: 14px;
     font-weight: bolder;
     margin: 2px 0;
@@ -119,12 +121,12 @@
     letter-spacing: -0.02rem;
     font-size: 11px;
   }
-  .python-article {
+  .pythonArticle {
     margin-bottom: 20px;
   }
   
   @media only screen and (max-width: 1300px) {
-    .courses-container {
+    .coursesContainer {
       min-width: 90%;
       display: flex;
       border: 1px solid #d1d7dc;
@@ -137,30 +139,24 @@
     }
   }
   @media only screen and (max-width: 850px) {
-    .course-content {
+    .courseContent {
       flex: 0 0 30%;
       max-width: 240px;
     }
-    .courses-container {
+    .coursesContainer {
       min-width: 90%;
     }
   }
   @media only screen and (max-width: 850px) {
-    .course-content {
+    .courseContent {
       flex: 0 0 30%;
       max-width: 240px;
     }
-    .courses-container {
+    .coursesContainer {
       min-width: 90%;
     }
   }
-  .border {
-    border: 1px solid #d1d7dc;
-    margin-bottom: 0;
-    padding: 0;
-    width: "240";
-    height: "135";
-  }
+
 @media only screen and (max-width: 850px) {
   .border {
     width: 100%;

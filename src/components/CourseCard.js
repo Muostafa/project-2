@@ -1,33 +1,34 @@
 import React from "react";
 import stars from "../assets/stars.png";
-import './courseCard.css';
+import styles from './courseCard.module.css';
+
 function CourseCard({ course }) {
   return (
     <>
       <img
-        className="border"
+        className={styles.border}
         alt="Course picture"
         width={240}
         height={135}
         src={course.image}
       />
-      <article className="course-title">
+      <article className={styles.courseTitle}>
         <h3>{course.title}</h3>
-        <h6 className="instructors">{course.author}</h6>
+        <h6 className={styles.instructors}>{course.author}</h6>
       </article>
-      <div className="course-rating">
-        <h3 className="rating-number">{course.rating}</h3>
+      <div className={styles.courseRating}>
+        <h3 className={styles.ratingNumber}>{course.rating}</h3>
         <img
-          className="stars"
+          className={styles.stars}
           src={stars}
           alt="course reviews"
           height="12px"
           width="64px"
         />
-        <h3 className="reviews-number">({course.people})</h3>
+        <h3 className={styles.reviewsNumber}>({course.people})</h3>
       </div>
       <h3>E£{course.price}</h3>
-      {course.bestseller && <aside className="bestseller">Bestseller</aside>}
+      {course.bestseller && <aside className={styles.bestseller}>Bestseller</aside>}
     </>
   );
 }
