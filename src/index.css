@@ -3,12 +3,12 @@
   padding: 0;
 }
 html,
-body {
+.home-page {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
 }
-body {
+.home-page {
   display: flex;
   background-color: fff;
   flex-direction: column;
@@ -18,9 +18,9 @@ body {
   font-weight: 400;
   line-height: 1;
   color: #1c1d1f;
-  z-index: 0;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  z-index: 0;
   min-height: 100vh;
 }
 div article {
@@ -35,3 +35,110 @@ h3 {
   font-size: small;
   margin: 0;
 }
+
+.center {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+.hide {
+  position: relative;
+  display: none !important;
+  visibility: collapse;
+  background-color: #b4690e;
+}
+.mobile {
+  position: absolute;
+  display: none;
+  visibility: hidden;
+}
+.web-logo > figure {
+  margin: 0;
+  padding: 0.8rem;
+}
+.white-button {
+  position: relative;
+  border: 1px black solid;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  max-width: none;
+  color: #1c1d1f;
+  text-decoration: none;
+  max-height: 2.6rem;
+  padding: 0.8rem;
+}
+
+.white-button:hover {
+  background-color: #e0e0e0;
+  color: #1c1d1f;
+}
+.button-margin {
+  margin: 0 4px;
+  padding: 0;
+}
+.dark {
+  color: black;
+}
+
+div .dark :hover {
+  color: #5624d0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 100%;
+  margin-bottom: 20px;
+  max-width: 85rem;
+}
+.border {
+  border: 1px solid #d1d7dc;
+  margin-bottom: 0;
+  padding: 0;
+  width: "240";
+  height: "135";
+}
+
+footer {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  background-color: #1c1d1f;
+  align-items: center;
+  width: 100%;
+  margin: auto 0 0 0;
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .border {
+    width: 100%;
+    height: auto;
+  }
+  .webpage {
+    position: absolute;
+    display: none;
+    visibility: hidden;
+  }
+  .mobile {
+    position: static;
+    display: flex;
+    visibility: inherit;
+  }
+}
+
+.bg-transparent {
+  --bs-bg-opacity: 1;
+  background-color: black !important;
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  transform: translate(0,50px);
+}
+

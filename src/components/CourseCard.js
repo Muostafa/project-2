@@ -3,11 +3,12 @@ import stars from "../assets/stars.png";
 import styles from './courseCard.module.css';
 
 function CourseCard({ course }) {
+  
   return (
-    <>
+    <div className={styles.card}>
       <img
         className={styles.border}
-        alt="Course picture"
+        alt="Course"
         width={240}
         height={135}
         src={course.image}
@@ -29,7 +30,7 @@ function CourseCard({ course }) {
       </div>
       <h3>E£{course.price}</h3>
       {course.bestseller && <aside className={styles.bestseller}>Bestseller</aside>}
-    </>
+    </div>
   );
 }
 

@@ -19,7 +19,7 @@ export default[
       image: "https://img-c.udemycdn.com/course/240x135/396876_cc92_7.jpg",
       price: "1,599.99",
       rating: 4.4,
-      people: "18,019",
+      people: "1,019",
       category: "python",
       bestseller: true,
     },

@@ -1,10 +1,10 @@
-import HomePage from './pages/HomePage'
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <HomePage></HomePage>
-    </div> 
-  )
+      <div className="App">
+        <HomePage></HomePage>
+      </div>
+  );
 }
 export default App;
