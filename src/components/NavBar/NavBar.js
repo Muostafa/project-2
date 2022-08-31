@@ -6,7 +6,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
 import LanguageIcon from '@mui/icons-material/LanguageOutlined';
 
 function NavBar() {
-  function handle(){
+  function handleSearch(){
     console.log("hi");
   }
   return (
@@ -36,7 +36,7 @@ function NavBar() {
         </div>
         <div className="search-bar webpage" style={{padding: "0 1rem"}}>
           <SearchIcon className="mui-search-icon"/>
-          <form className="form" action="" onSubmit={handle}>
+          <form className="form" action="" onSubmit={handleSearch}>
             <input
               type="search"
               id="course-search"

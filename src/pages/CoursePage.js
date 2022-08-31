@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import CourseBlackBar from "../components/CoursesComponents/CourseBlackBar/CourseBlackBar";
+import TopContainer from "../components/CoursesComponents/TopContainer/TopContainer";
 import Footer from "../components/Footer/Footer";
 import NavBar from "../components/NavBar/NavBar";
 
@@ -16,6 +17,7 @@ function CoursePage({ courses }) {
   return (
     <div className="home-page">
       <NavBar />
+      <TopContainer course={course}/>
       <Footer />
       <CourseBlackBar course={course} />
     </div>
