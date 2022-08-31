@@ -6,6 +6,9 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
 import LanguageIcon from '@mui/icons-material/LanguageOutlined';
 
 function NavBar() {
+  function handle(){
+    console.log("hi");
+  }
   return (
     <nav>
       <section className="nav-links">
@@ -33,7 +36,7 @@ function NavBar() {
         </div>
         <div className="search-bar webpage" style={{padding: "0 1rem"}}>
           <SearchIcon className="mui-search-icon"/>
-          <form className="form" action="" onSubmit={e => e.preventDefault()}>
+          <form className="form" action="" onSubmit={handle}>
             <input
               type="search"
               id="course-search"

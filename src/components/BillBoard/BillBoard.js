@@ -3,9 +3,9 @@ import clock from "../../assets/clock.jpg"
 import "./BillBoard.css"
 function BillBoard() {
   return (
-    <header class="billboard">
-      <div class="billboard">
-        <div class="billboard-banner-image-container">
+    <header className="billboard">
+      <div className="billboard">
+        <div className="billboard-banner-image-container">
           <img
             src={clock}
             alt="Clock"
@@ -13,7 +13,7 @@ function BillBoard() {
             height="100%"
           />
         </div>
-        <div class="billboard-content-box">
+        <div className="billboard-content-box">
           <div>
             <article>
               <h2>New to Udemy? Lucky you.</h2>

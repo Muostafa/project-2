@@ -2,7 +2,7 @@ import React from 'react'
 import "./HeadLine.css"
 function HeadLine() {
   return (
-    <section class="headline">
+    <section className="headline">
         <article>
           <h2>A broad selection of courses</h2>
           <p>

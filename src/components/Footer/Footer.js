@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer>
-    <div class="web-logo">
+    <div className="web-logo">
       <figure>
         <a href="">
           <img

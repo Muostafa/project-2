@@ -1,6 +1,10 @@
    .card{
     max-width: 242px;
    }
+   .link{
+    text-decoration: none;
+    color: inherit;
+   }
    .coursesPictures {
     width: 100%;
     display: flex;
