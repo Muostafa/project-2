@@ -1,0 +1,10 @@
+.summary {
+    background-color: #f7f9fa;
+    border-top: 0.2px solid #d1d7dc;
+    border-bottom: 0.2px solid #d1d7dc;
+}
+.summary  * {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1c1d1f;
+}

@@ -1,20 +1,24 @@
-import React from "react";
-import './NavBar.css';
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCartOutlined';
-import LanguageIcon from '@mui/icons-material/LanguageOutlined';
+import React, { useState } from "react";
+import "./NavBar.css";
+import MenuIcon from "@mui/icons-material/Menu";
+import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
+import LanguageIcon from "@mui/icons-material/LanguageOutlined";
 
 function NavBar() {
-  function handleSearch(){
-    console.log("hi");
-  }
+  const [searchText, setSearchText] = useState("");
+  const handleSearch = (e) => {
+    e.preventDefault();
+    //redirect to homepage with search queue
+    window.location.href = searchText ? `/?search=${searchText}` : `/`;
+  };
+  
   return (
     <nav>
       <section className="nav-links">
         <div className="mobile">
           <a href="" className="shopping-cart">
-            <MenuIcon/>
+            <MenuIcon />
           </a>
         </div>
         <div className="web-logo">
@@ -34,15 +38,17 @@ function NavBar() {
             <h3>Categories</h3>
           </a>
         </div>
-        <div className="search-bar webpage" style={{padding: "0 1rem"}}>
-          <SearchIcon className="mui-search-icon"/>
+        <div className="search-bar webpage" style={{ padding: "0 1rem" }}>
+          <SearchIcon className="mui-search-icon" />
           <form className="form" action="" onSubmit={handleSearch}>
             <input
               type="search"
               id="course-search"
               name="search"
-              style={{"width": "100%"}}
+              value={searchText}
+              style={{ width: "100%" }}
               placeholder="Search for anything"
+              onChange={(e) => setSearchText(e.target.value)}
             />
             <input className="search-button" type="submit" value="Search" />
           </form>
@@ -59,10 +65,10 @@ function NavBar() {
         </div>
         <div>
           <a href="" className="search-icon">
-            <SearchIcon/>
+            <SearchIcon />
           </a>
           <a href="" className="shopping-cart">
-            <ShoppingCartIcon/>
+            <ShoppingCartIcon />
           </a>
         </div>
         <div className="webpage button-margin">
@@ -75,9 +81,9 @@ function NavBar() {
             <h3>Sign up</h3>
           </a>
         </div>
-        <div className="webpage lang" >
-          <a href="" className="language" style={{padding: "5px 7px"}}>
-            <LanguageIcon/>
+        <div className="webpage lang">
+          <a href="" className="language" style={{ padding: "5px 7px" }}>
+            <LanguageIcon />
           </a>
         </div>
       </section>

@@ -13,7 +13,7 @@ function TopContainer({ course }) {
       {course.category.charAt(0).toUpperCase() + course.category.slice(1)}
     </h3>,
   ];
-  
+
   return (
     <div className={styles.container}>
       <div className={styles.contentContainer}>
@@ -26,7 +26,10 @@ function TopContainer({ course }) {
             {breadcrumbs}
           </Breadcrumbs>
           <h3>{course.title}</h3>
-          <p>{course.description}</p>
+          <p>
+            {course.description ||
+              "This is a default description for the course. Please make sure to add a description to this course to the data base."}
+          </p>
           <span className={styles.reviews}>
             {course.bestseller && (
               <aside className={styles.bestseller}>Bestseller</aside>
