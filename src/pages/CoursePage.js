@@ -23,7 +23,7 @@ function CoursePage({ courses }) {
       <div className="course-page-main">
         <div className="course-page-contents">
           <WhatYouWillLearn course={course}/>
-          <CourseContent/>
+          <CourseContent course={course}/>
         </div>
       </div>
       <Footer />

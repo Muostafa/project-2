@@ -5,7 +5,7 @@ import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
@@ -27,11 +27,20 @@ const AccordionSummary = styled((props) => (
   },
 }));
 
-function ContentAccordion() {
+function ContentAccordion(props) {
+  let info = "";
+  if (props.info)
+    info = props.info.map((info, index) => <div key={index} className={styles.info}><PlayCircleIcon fontSize="small" className={styles.playIcon}/><h3 >{info}</h3></div>);
+
   const [expanded, setExpanded] = useState(false);
+  
   const handleChange = (panel) => (event, newExpanded) => {
-    setExpanded(newExpanded ? panel : false);
+    if(newExpanded)
+      setExpanded(expanded => !expanded)
+    else
+    setExpanded(false);
   };
+
   return (
     <MuiAccordion
       className={styles.accordion}
@@ -46,15 +55,11 @@ function ContentAccordion() {
         aria-controls="panel1d-content"
         id="panel1d-header"
       >
-        <Typography className={styles.title}>Collions • 146 1</Typography>
+        <h3 className={styles.title}>{props.title}</h3>
+        <h3>{props.info.length} lectures • {Math.floor(props.info.length * 4.3)}min</h3>
       </AccordionSummary>
-      <MuiAccordionDetails>
-        <Typography>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada
-          lacus ex, sit amet blandit leo lobortis eget.
-        </Typography>
+      <MuiAccordionDetails className={styles.infoContainer}>
+        {info}
       </MuiAccordionDetails>
     </MuiAccordion>
   );

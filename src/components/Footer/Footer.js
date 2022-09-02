@@ -5,7 +5,7 @@ function Footer() {
     <footer>
     <div className="web-logo">
       <figure>
-        <a href="">
+        <a href="/">
           <img
             src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy-inverted.svg"
             alt="Udemy logo"

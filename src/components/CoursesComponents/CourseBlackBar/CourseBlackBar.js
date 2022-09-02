@@ -5,7 +5,6 @@ import StarIcon from "@mui/icons-material/Star";
 function CourseBlackBar({ course }) {
   return (
     <div className={styles.container}>
-      
       <h3>{course.title}</h3>
       <span className={styles.reviews}>
       {course.bestseller && (

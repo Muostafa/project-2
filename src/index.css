@@ -109,7 +109,7 @@ main {
 }
 
 .course-page-main {
-  height: 2000px;
+  min-height: 80vh;
   width: 73rem;
   margin: 0px auto;
 }

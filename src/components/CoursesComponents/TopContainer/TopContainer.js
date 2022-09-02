@@ -3,6 +3,7 @@ import styles from "./topContainer.module.css";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
+import Navigation from "../Navigation/Navigation";
 
 function TopContainer({ course }) {
   const breadcrumbs = [
@@ -57,6 +58,7 @@ function TopContainer({ course }) {
           </span>
         </div>
       </div>
+      <Navigation/>
     </div>
   );
 }
