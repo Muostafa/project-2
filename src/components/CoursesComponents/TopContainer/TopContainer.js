@@ -1,11 +1,11 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./topContainer.module.css";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Navigation from "../Navigation/Navigation";
 
-function TopContainer({ course }) {
+const TopContainer = forwardRef(({ course, topContainerOnScreen }, ref) => {
   const breadcrumbs = [
     <h3 key="1" className={styles.breadCrumb}>
       Development
@@ -14,9 +14,8 @@ function TopContainer({ course }) {
       {course.category.charAt(0).toUpperCase() + course.category.slice(1)}
     </h3>,
   ];
-
   return (
-    <div className={styles.container}>
+    <div ref={ref} className={styles.container}>
       <div className={styles.contentContainer}>
         <div className={styles.content}>
           <Breadcrumbs
@@ -58,9 +57,9 @@ function TopContainer({ course }) {
           </span>
         </div>
       </div>
-      <Navigation/>
+      <Navigation />
     </div>
   );
-}
+});
 
 export default TopContainer;
