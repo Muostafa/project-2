@@ -3,8 +3,6 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import courses from "./pages/courses";
 import CoursePage from "./pages/CoursePage";
-import instructors from "./pages/instructors"
-
 function App() {
   return (
     <div className="App">
