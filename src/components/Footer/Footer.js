@@ -3,7 +3,7 @@ import React, { forwardRef } from "react";
 const Footer = forwardRef((props,  ref) => {
   return (
     <footer ref={ref}>
-      <div className="web-logo">
+      <div className="web-logo" >
         <figure>
           <a href="/">
             <img
@@ -15,7 +15,7 @@ const Footer = forwardRef((props,  ref) => {
           </a>
         </figure>
       </div>
-      <div style={{ paddingRight: "1rem" }}>© 2022 Udemy, Mustafa Mahmoud.</div>
+      <div style={{ padding: "1rem" }}>© 2022 Udemy, Mustafa Mahmoud.</div>
     </footer>
   );
 });

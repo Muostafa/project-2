@@ -56,7 +56,7 @@ function ContentAccordion(props) {
         id="panel1d-header"
       >
         <h3 className={styles.title}>{props.title}</h3>
-        <h3>{props.info.length} lectures • {Math.floor(props.info.length * 4.3)}min</h3>
+        <h3 className="tablet">{props.info.length} lectures • {Math.floor(props.info.length * 4.3)}min</h3>
       </AccordionSummary>
       <MuiAccordionDetails className={styles.infoContainer}>
         {info}

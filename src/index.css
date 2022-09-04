@@ -109,6 +109,8 @@ main {
 }
 
 .course-page-main {
+  display: flex;
+  flex-direction: column;
   min-height: 80vh;
   width: 73rem;
   margin: 0px auto;
@@ -125,26 +127,36 @@ footer {
   color: #fff;
   justify-content: space-between;
   background-color: #1c1d1f;
-  align-items: center;
   width: 100%;
   margin: auto 0 0 0;
   padding: 0 1rem;
 }
 
-@media only screen and (max-width: 850px) {
-  .border {
-    width: 100%;
-    height: auto;
-  }
+@media only screen and (max-width: 1050px) {
   .webpage {
     position: absolute;
     display: none;
     visibility: hidden;
   }
-  .mobile {
-    position: static;
-    display: flex;
-    visibility: inherit;
+  .course-page-contents {
+    margin: 0 1.5rem;
+  }
+  .course-page-main {
+    min-height: 80vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  footer {
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tablet {
+    position: absolute;
+    display: none;
+    visibility: hidden;
   }
 }
 

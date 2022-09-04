@@ -91,3 +91,44 @@
   letter-spacing: -0.02rem;
   font-size: 11px;
 }
+.courseImg {
+  padding: 2px;
+  position: absolute;
+  visibility: hidden;
+}
+.courseImg:hover {
+  cursor: pointer;
+}
+
+.iconContainer {
+  display: flex;
+  float: left;
+  position: absolute;
+  top: calc(50% - 1.5rem);
+  left: calc(50% - 1.5rem);
+  z-index: 1;
+  padding: 5px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: white;
+}
+.preview {
+  float: left;
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  line-height: 2rem;
+  z-index: 1;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: large;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  .courseImg{
+    position: relative;
+    visibility: visible;
+  }
+}

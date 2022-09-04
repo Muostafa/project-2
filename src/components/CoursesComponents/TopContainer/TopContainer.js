@@ -4,8 +4,9 @@ import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Navigation from "../Navigation/Navigation";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
-const TopContainer = forwardRef(({ course, topContainerOnScreen }, ref) => {
+const TopContainer = forwardRef(({ course }, ref) => {
   const breadcrumbs = [
     <h3 key="1" className={styles.breadCrumb}>
       Development
@@ -25,6 +26,16 @@ const TopContainer = forwardRef(({ course, topContainerOnScreen }, ref) => {
           >
             {breadcrumbs}
           </Breadcrumbs>
+          <div className={styles.courseImg}>
+          <img alt="Course" width={"100%"} height={"auto"} src={course.image} />
+          <div className={styles.iconContainer}>
+            <PlayArrowIcon
+              fontSize="large"
+              style={{ color: "black", transform: "scale(130%)" }}
+            />
+          </div>
+          <div className={styles.preview}>Preview this course</div>
+        </div>
           <h3>{course.title}</h3>
           <p>
             {course.description ||

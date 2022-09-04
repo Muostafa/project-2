@@ -29,7 +29,7 @@
   flex-direction: row;
   font-size: small;
   line-height: 1.3rem;
-  min-width: 50%;
+  min-width: 18rem;
   max-width: 50%;
   margin: 0.2rem 0;
 }

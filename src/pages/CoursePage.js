@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import CourseBlackBar from "../components/CoursesComponents/CourseBlackBar/CourseBlackBar";
 import CourseContent from "../components/CoursesComponents/CourseContent/CourseContent";
+import Requirements from "../components/CoursesComponents/Requirements";
 import Sidebar from "../components/CoursesComponents/Sidebar/Sidebar";
 import TopContainer from "../components/CoursesComponents/TopContainer/TopContainer";
 import WhatYouWillLearn from "../components/CoursesComponents/WhatYouWillLearn/WhatYouWillLearn";
@@ -26,17 +27,18 @@ function CoursePage({ courses }) {
 
   return (
     <div className="home-page">
-      <NavBar />
-      <TopContainer ref={topContainerRef} course={course} topContainerOnScreen={topContainerOnScreen}/>
+      <NavBar/>
+      <TopContainer ref={topContainerRef} course={course} />
       <div className="course-page-main">
         <div className="course-page-contents">
           <Sidebar course={course} footerOnScreen={footerOnScreen} topContainerOnScreen={topContainerOnScreen}/>
           <WhatYouWillLearn course={course} />
           <CourseContent course={course} />
+          <Requirements course={course}/>
         </div>
       </div>
       <Footer ref={footerRef}/>
-      <CourseBlackBar course={course} />
+      <CourseBlackBar course={course} topContainerOnScreen={topContainerOnScreen}/>
     </div>
   );
 }
