@@ -1,11 +1,11 @@
-export default [
+export default 
   {
     id: 1,
     photo: "https://img-c.udemycdn.com/user/200_H/10260436_946b_6.jpg",
     title: "CEO of TheCodex.me - Teaching 500,000+ Students how to code",
     name: "Avinash Jain",
     description:
-      "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
+      "CEO of TheCodex.me - Teaching 500,000+ Students how to code",
     rating: 4.4,
     students: "891,073",
     about: [
@@ -16,5 +16,5 @@ export default [
     ],
     courses: 16,
     reviews:"73,790"
-  },
-];
+  }
+

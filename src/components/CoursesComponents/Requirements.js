@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/CoursePage/Requirements.module.css'
+import styles from '../../styles/CoursePage/requirements.module.css'
 import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 function Requirements({course}) {
   let requirements = "";

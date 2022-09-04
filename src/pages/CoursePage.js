@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { useParams } from "react-router-dom";
 import CourseBlackBar from "../components/CoursesComponents/CourseBlackBar/CourseBlackBar";
 import CourseContent from "../components/CoursesComponents/CourseContent/CourseContent";
+import Instructor from "../components/CoursesComponents/Instructor";
 import Requirements from "../components/CoursesComponents/Requirements";
 import Sidebar from "../components/CoursesComponents/Sidebar/Sidebar";
 import TopContainer from "../components/CoursesComponents/TopContainer/TopContainer";
@@ -35,6 +36,7 @@ function CoursePage({ courses }) {
           <WhatYouWillLearn course={course} />
           <CourseContent course={course} />
           <Requirements course={course}/>
+          <Instructor/>
         </div>
       </div>
       <Footer ref={footerRef}/>
