@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import CoursesContainer from "../components/CoursesContainer/CoursesContainer";
+import CoursesContainer from "../components/HomePage/CoursesContainer";
 import courses from "./courses";
-import Categories from "../components/Categories/Categories";
-import BillBoard from "../components/BillBoard/BillBoard";
-import HeadLine from "../components/HeadLine/HeadLine";
+import Categories from "../components/HomePage/Categories";
+import BillBoard from "../components/HomePage/BillBoard";
+import HeadLine from "../components/HomePage/HeadLine";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 

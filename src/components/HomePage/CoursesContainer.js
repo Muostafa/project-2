@@ -1,6 +1,6 @@
 import React from "react";
 import CourseCard from "./CourseCard";
-import styles from "./courseCard.module.css";
+import styles from "../../styles/HomePage/courseCard.module.css";
 
 function CoursesContainer(props) {
   //max 3 lines for description

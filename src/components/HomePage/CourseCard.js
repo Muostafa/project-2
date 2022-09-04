@@ -1,6 +1,6 @@
 import React from "react";
 import stars from "../../assets/stars.png";
-import styles from "./courseCard.module.css";
+import styles from "../../styles/HomePage/courseCard.module.css";
 import { Link } from "react-router-dom";
 
 function CourseCard({ course }) {

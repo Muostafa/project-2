@@ -1,6 +1,6 @@
 import React from 'react'
 import clock from "../../assets/clock.jpg"
-import "./BillBoard.css"
+import "../../styles/HomePage/BillBoard.css"
 function BillBoard() {
   return (
     <header className="billboard">

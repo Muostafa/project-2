@@ -1,5 +1,5 @@
 import React from 'react'
-import "./HeadLine.css"
+import "../../styles/HomePage/HeadLine.css"
 function HeadLine() {
   return (
     <section className="headline">
