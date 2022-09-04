@@ -131,4 +131,10 @@
     position: relative;
     visibility: visible;
   }
+  .container{
+    width: 100%;
+  }
+  .contentContainer{
+    width: unset;
+  }
 }

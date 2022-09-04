@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Sidebar.module.css";
+import styles from "../../styles/CoursePage/sidebar.module.css";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import MobileFriendlyIcon from "@mui/icons-material/MobileFriendly";

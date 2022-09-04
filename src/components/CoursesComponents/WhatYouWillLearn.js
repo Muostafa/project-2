@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./whatYouWillLearn.module.css";
+import styles from "../../styles/CoursePage/whatYouWillLearn.module.css";
 import CheckIcon from "@mui/icons-material/Check";
 
 function WhatYouWillLearn({ course }) {

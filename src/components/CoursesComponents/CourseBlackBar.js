@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./courseBlackBar.module.css";
+import styles from "../../styles/CoursePage/courseBlackBar.module.css";
 import StarIcon from "@mui/icons-material/Star";
-import Navigation from "../Navigation/Navigation";
+import Navigation from "./Navigation";
 
 function CourseBlackBar({ course, topContainerOnScreen }) {
   return (

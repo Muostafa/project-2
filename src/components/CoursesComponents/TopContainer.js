@@ -1,9 +1,9 @@
 import React, { forwardRef } from "react";
-import styles from "./topContainer.module.css";
+import styles from "../../styles/CoursePage/topContainer.module.css";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import Navigation from "../Navigation/Navigation";
+import Navigation from "./Navigation";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
 const TopContainer = forwardRef(({ course }, ref) => {

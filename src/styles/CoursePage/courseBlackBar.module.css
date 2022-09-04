@@ -34,10 +34,10 @@
   font-weight: 800;
   font-size: medium;
   white-space: nowrap;
-  overflow: hidden;
   text-overflow: ellipsis;
   min-width: 0;
   margin-bottom: 0.4rem;
+  line-height: 1rem;
 }
 .reviews {
   display: flex;

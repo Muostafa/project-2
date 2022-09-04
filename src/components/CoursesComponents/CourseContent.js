@@ -1,6 +1,6 @@
 import React from "react";
 import ContentAccordion from "./ContentAccordion";
-import styles from "./courseContent.module.css";
+import styles from "../../styles/CoursePage/courseContent.module.css";
 function CourseContent({ course }) {
   let contents = "";
   if (course.content)

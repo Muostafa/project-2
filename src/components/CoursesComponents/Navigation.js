@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./Navigation.module.css";
+import styles from "../../styles/CoursePage/navigation.module.css";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 

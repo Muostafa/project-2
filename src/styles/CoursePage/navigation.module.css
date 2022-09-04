@@ -18,5 +18,16 @@
     color: black;
   }
   .tab {
+    width: 25%;
     padding: 0 3rem;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .tabs{
+      width: 100%;
+      justify-content: center;
+    }
+    .contentContainer{
+      width: unset;
+    }
   }

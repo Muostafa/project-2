@@ -5,8 +5,8 @@ import courses from "./courses";
 import Categories from "../components/Categories/Categories";
 import BillBoard from "../components/BillBoard/BillBoard";
 import HeadLine from "../components/HeadLine/HeadLine";
-import NavBar from "../components/NavBar/NavBar";
-import Footer from "../components/Footer/Footer";
+import NavBar from "../components/NavBar";
+import Footer from "../components/Footer";
 
 function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams();

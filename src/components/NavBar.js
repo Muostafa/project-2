@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./NavBar.css";
+import "../styles/NavBar.css";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
@@ -33,12 +33,12 @@ function NavBar() {
             </a>
           </figure>
         </div>
-        <div className="webpage">
+        <div className="navWebpage">
           <a href="" className="dark">
             <h3>Categories</h3>
           </a>
         </div>
-        <div className="search-bar webpage" style={{ padding: "0 1rem" }}>
+        <div className="search-bar navWebpage" style={{ padding: "0 1rem" }}>
           <SearchIcon className="mui-search-icon" />
           <form className="form" action="" onSubmit={handleSearch}>
             <input
@@ -71,17 +71,17 @@ function NavBar() {
             <ShoppingCartIcon />
           </a>
         </div>
-        <div className="webpage button-margin">
+        <div className="navWebpage button-margin">
           <a href="" className="white-button">
             <h3>Log in</h3>
           </a>
         </div>
-        <div className="webpage button-margin">
+        <div className="navWebpage button-margin">
           <a href="" className="sign-up">
             <h3>Sign up</h3>
           </a>
         </div>
-        <div className="webpage lang">
+        <div className="navWebpage lang">
           <a href="" className="language" style={{ padding: "5px 7px" }}>
             <LanguageIcon />
           </a>
