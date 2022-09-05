@@ -13,7 +13,7 @@
 }
 
 .courseImg {
-  padding: 1px;
+  margin: 1px;
   position: relative;
 }
 .courseImg:hover {
@@ -36,7 +36,7 @@
 .preview {
   float: left;
   position: absolute;
-  top: 70%;
+  top: 80%;
   width: 100%;
   line-height: 2rem;
   z-index: 1;
@@ -44,6 +44,17 @@
   font-weight: 800;
   font-size: small;
   text-align: center;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(28, 29, 31, 0) 0%,
+    rgba(28, 29, 31, 0.9) 100%
+  );
 }
 
 .courseInfo {
@@ -136,20 +147,34 @@
   margin-right: 1rem;
 }
 
-.udemyAd{
+.share {
+  display: flex;
+  justify-content: space-between;
+}
+.share > h3 {
+  font-weight: 800;
+  text-decoration-line: underline;
+  font-size: 12px;
+  line-height: 1rem;
+}
+.share > h3:hover {
+  cursor: pointer;
+}
+
+.udemyAd {
   border-top: 1px solid #d1d7dc;
   padding: 1rem 22px;
   display: flex;
   flex-direction: column;
 }
-.udemyAd > *{
+.udemyAd > * {
   margin: 5px 0;
 }
-.udemyAd > article > h3{
+.udemyAd > article > h3 {
   font-weight: 800;
   font-size: 17px;
   margin-bottom: 10px;
 }
-.udemyAd > article > p{
+.udemyAd > article > p {
   font-size: 14px;
 }

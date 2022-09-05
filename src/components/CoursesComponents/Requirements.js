@@ -4,10 +4,10 @@ import FiberManualRecordIcon from '@mui/icons-material/FiberManualRecord';
 function Requirements({course}) {
   let requirements = "";
   if (course.requirements)
-    requirements = course.requirements.map((requriement, index) => (
+    requirements = course.requirements.map((requirement, index) => (
       <div key={index}>
         <FiberManualRecordIcon className={styles.icon} fontSize="small" />
-        <p>{requriement}</p>
+        <p>{requirement}</p>
       </div>
     ));
   return (

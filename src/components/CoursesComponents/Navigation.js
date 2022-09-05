@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styles from "../../styles/CoursePage/navigation.module.css";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-
+import { refsContext } from "../../pages/CoursePage";
 const buttonStyle = {
   fontSize: "11px",
   color: "#6a6f73",
@@ -10,16 +10,17 @@ const buttonStyle = {
 };
 
 function Navigation() {
-  const [value, setValue] = useState("one");
+  const { whatYouLearnRef, contentRef, instructorRef ,value, setValue} = useContext(refsContext);
+
   const navStyle = {
-    width: "100%",   
-    lineHeight: "1",
+    width: "100%",
     backgroundColor: "#fff",
     color: "#1c1d1f",
     alignItems: "center",
     justifyContent: "center",
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08)",
   };
+
   return (
     <div style={navStyle}>
       <div className={styles.tabs}>
@@ -35,30 +36,50 @@ function Navigation() {
           <Tab
             sx={{ padding: "0 3rem" }}
             className={styles.tab}
-            value="one"
+            value="overview"
             label="OVERVIEW"
-            onClick={() => setValue("one")}
+            onClick={() => {
+              var topOfElement = whatYouLearnRef.current.offsetTop - 150;
+              window.scroll({ top: topOfElement, behavior: "smooth" });
+              setValue("overview");
+            }}
           />
           <Tab
             sx={{ padding: "0 3rem" }}
             className={styles.tab}
-            value="two"
+            value="curriculum"
             label="CURRICULUM"
-            onClick={() => setValue("two")}
+            onClick={() => {
+              var topOfElement = contentRef.current.offsetTop - 127;
+              window.scroll({ top: topOfElement, behavior: "smooth" });
+              setValue("curriculum");
+            }}
           />
           <Tab
             sx={{ padding: "0 3rem" }}
             className={styles.tab}
-            value="three"
+            value="instructor"
             label="INSTRUCTOR"
-            onClick={() => setValue("three")}
+            onClick={() => {
+              var topOfElement = instructorRef.current.offsetTop - 130;
+              window.scroll({ top: topOfElement, behavior: "smooth" });
+              setValue("instructor");
+            }}
           />
           <Tab
             sx={{ padding: "0 3rem" }}
             className={styles.tab}
-            value="four"
+            value="reviews"
             label="REVIEWS"
-            onClick={() => setValue("four")}
+            onClick={() => {
+              var topOfElement = instructorRef.current.offsetTop - 127;
+              window.scroll({
+                top: topOfElement,
+                behavior: "smooth",
+                block: "end",
+              });
+              setValue("reviews");
+            }}
           />
         </Tabs>
       </div>

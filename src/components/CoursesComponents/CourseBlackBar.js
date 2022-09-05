@@ -26,7 +26,6 @@ function CourseBlackBar({ course, topContainerOnScreen }) {
           </div>
         </div>
       </div>
-
       <div className={styles.navigation}>
         {!topContainerOnScreen && <Navigation />}
       </div>

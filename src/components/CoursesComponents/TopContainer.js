@@ -6,7 +6,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Navigation from "./Navigation";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
-const TopContainer = forwardRef(({ course }, ref) => {
+const TopContainer = forwardRef(({ course, topContainerOnScreen }, ref) => {
   const breadcrumbs = [
     <h3 key="1" className={styles.breadCrumb}>
       Development
@@ -27,15 +27,21 @@ const TopContainer = forwardRef(({ course }, ref) => {
             {breadcrumbs}
           </Breadcrumbs>
           <div className={styles.courseImg}>
-          <img alt="Course" width={"100%"} height={"auto"} src={course.image} />
-          <div className={styles.iconContainer}>
-            <PlayArrowIcon
-              fontSize="large"
-              style={{ color: "black", transform: "scale(130%)" }}
+            <img
+              alt="Course"
+              width={"100%"}
+              height={"auto"}
+              src={course.image}
             />
+            <div className={styles.iconContainer}>
+              <PlayArrowIcon
+                fontSize="large"
+                style={{ color: "black", transform: "scale(130%)" }}
+              />
+            </div>
+            <div className={styles.preview}>Preview this course</div>
+            <div className={styles.mask}></div>
           </div>
-          <div className={styles.preview}>Preview this course</div>
-        </div>
           <h3>{course.title}</h3>
           <p>
             {course.description ||
@@ -68,7 +74,7 @@ const TopContainer = forwardRef(({ course }, ref) => {
           </span>
         </div>
       </div>
-      <Navigation />
+      <Navigation topContainerOnScreen={topContainerOnScreen}/>
     </div>
   );
 });

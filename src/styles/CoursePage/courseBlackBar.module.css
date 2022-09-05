@@ -38,6 +38,7 @@
   min-width: 0;
   margin-bottom: 0.4rem;
   line-height: 1rem;
+  overflow: hidden;
 }
 .reviews {
   display: flex;

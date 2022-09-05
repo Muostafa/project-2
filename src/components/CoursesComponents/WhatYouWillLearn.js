@@ -1,8 +1,8 @@
-import React from "react";
+import React, {forwardRef} from "react";
 import styles from "../../styles/CoursePage/whatYouWillLearn.module.css";
 import CheckIcon from "@mui/icons-material/Check";
 
-function WhatYouWillLearn({ course }) {
+const WhatYouWillLearn = forwardRef(({ course }, ref) => {
   let learnings = "";
   if (course.learnings)
     learnings = course.learnings.map((learning, index) => (
@@ -13,7 +13,7 @@ function WhatYouWillLearn({ course }) {
     ));
 
   return (
-    <div className={styles.container}>
+    <div id="whatYouWillLearn" ref={ref} className={styles.container}>
       <h3>What you'll learn</h3>
       <div className={styles.learnings}>
         {learnings ||
@@ -21,6 +21,6 @@ function WhatYouWillLearn({ course }) {
       </div>
     </div>
   );
-}
+})
 
 export default WhatYouWillLearn;

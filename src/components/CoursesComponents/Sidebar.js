@@ -8,7 +8,7 @@ import BrowserUpdatedIcon from "@mui/icons-material/BrowserUpdated";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import OndemandVideoOutlinedIcon from "@mui/icons-material/OndemandVideoOutlined";
 
-function Sidebar({ course, footerOnScreen, topContainerOnScreen }) {
+function Sidebar({ course, topContainerOnScreen }) {
   const sidebarStyle = {
     width: "20rem",
     zIndex: "7",
@@ -23,16 +23,12 @@ function Sidebar({ course, footerOnScreen, topContainerOnScreen }) {
   if (topContainerOnScreen) {
     sidebarStyle.top = "5.5rem";
     delete sidebarStyle.bottom;
-  }
-  if (footerOnScreen) {
-    sidebarStyle.bottom = "4rem";
-    delete sidebarStyle.top;
     sidebarStyle.zIndex = "3";
   }
   return (
     <div className="webpage" style={sidebarStyle}>
-      {(footerOnScreen || topContainerOnScreen) && (
-        <div className={styles.courseImg}>
+      {( topContainerOnScreen) && (
+        <div className={styles.courseImg} >
           <img alt="Course" width={"100%"} height={"auto"} src={course.image} />
           <div className={styles.iconContainer}>
             <PlayArrowIcon
@@ -40,6 +36,7 @@ function Sidebar({ course, footerOnScreen, topContainerOnScreen }) {
               style={{ color: "black", transform: "scale(130%)" }}
             />
           </div>
+          <div className={styles.mask}></div>
           <div className={styles.preview}>Preview this course</div>
         </div>
       )}
@@ -60,7 +57,7 @@ function Sidebar({ course, footerOnScreen, topContainerOnScreen }) {
                 className={styles.checkMark}
                 fontSize="small"
               />
-              <p>{Math.floor(Math.random() * 10) + 15} hours on-demand video</p>
+              <p>{8.5} hours on-demand video</p>
             </div>
             <div>
               <DescriptionOutlinedIcon
@@ -94,6 +91,11 @@ function Sidebar({ course, footerOnScreen, topContainerOnScreen }) {
               />
               <p>Certificate of completion</p>
             </div>
+          </div>
+          <div className={styles.share}>
+            <h3>Share</h3>
+            <h3>Gift this course</h3>
+            <h3>Apply Coupon</h3>
           </div>
         </div>
       </div>
