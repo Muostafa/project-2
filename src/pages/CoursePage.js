@@ -12,6 +12,7 @@ import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import useOnScreen from "../hooks/useOnScreen";
 import instructors from "../pages/instructors";
+import StudentFeedback from "../components/CoursesComponents/StudentFeedback";
 
 //to pass the refs to navigator
 export const refsContext = createContext();
@@ -64,6 +65,7 @@ function CoursePage({ courses }) {
             <Requirements course={course} />
             <Description course = {course}/>
             <Instructor ref={instructorRef} instructor={instructor}/>
+            <StudentFeedback course={course}/>
           </div>
         </div>
         <Footer ref={footerRef} />

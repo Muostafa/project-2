@@ -167,3 +167,10 @@ footer {
   width: 50px;
   transform: translate(0, 50px);
 }
+.css-eglki6-MuiLinearProgress-root {
+  background-color: #d1d7dc !important;
+  height: 0.5rem !important;
+}
+.css-5xe99f-MuiLinearProgress-bar1 {
+  background-color: #6a6f73 !important;
+}
