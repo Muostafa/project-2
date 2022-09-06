@@ -86,10 +86,12 @@ input[type="search"]:focus {
   max-height: 2.6rem;
   padding: 0.8rem;
   margin: 0 6px 0 3px;
-  font-weight: 800;
 }
 .sign-up:hover {
   color: #fff;
+}
+.sign-up > h3 {
+  font-weight: 800;
 }
 .lang:hover {
   background-color: #e0e0e0;

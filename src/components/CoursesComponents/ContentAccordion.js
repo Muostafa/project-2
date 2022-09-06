@@ -27,10 +27,10 @@ const AccordionSummary = styled((props) => (
   },
 }));
 
-function ContentAccordion(props) {
-  let info = "";
-  if (props.info)
-    info = props.info.map((info, index) => <div key={index} className={styles.info}><PlayCircleIcon fontSize="small" className={styles.playIcon}/><h3 >{info}</h3></div>);
+function ContentAccordion({info, title}) {
+  let infos = "";
+  if (info)
+    infos = info.map((x, index) => <div key={index} className={styles.info}><PlayCircleIcon fontSize="small" className={styles.playIcon}/><h3 >{x}</h3></div>);
 
   const [expanded, setExpanded] = useState(false);
   
@@ -55,11 +55,11 @@ function ContentAccordion(props) {
         aria-controls="panel1d-content"
         id="panel1d-header"
       >
-        <h3 className={styles.title}>{props.title}</h3>
-        <h3 className="tablet">{props.info.length} lectures • {Math.floor(props.info.length * 4.3)}min</h3>
+        <h3 className={styles.title}>{title}</h3>
+        <h3 className="tablet">{info.length} lectures • {Math.floor(info.length * 4.3)}min</h3>
       </AccordionSummary>
       <MuiAccordionDetails className={styles.infoContainer}>
-        {info}
+        {infos}
       </MuiAccordionDetails>
     </MuiAccordion>
   );

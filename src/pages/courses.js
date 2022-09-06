@@ -378,6 +378,200 @@ export default [
     ],
   },
   {
+    id: 26,
+    link: "",
+    title: "Art for Kids & Beginners: 15 Easy Drawing & Painting Lessons",
+    instructor: 4,
+    author: "Em Winn",
+    image: "https://img-b.udemycdn.com/course/240x135/670050_69ff_3.jpg",
+    price: "1,199.99",
+    rating: 4.8,
+    people: "740",
+    category: "drawing",
+    bestseller: false,
+    learnings: [
+      "Create 15 Magnificent Watercolor Animal Paintings.",
+      "Apply the knowledge gained in this course to create unique masterpieces.",
+      "Participate in an activity that cultivates critical thinking skills, develops hand-eye coordination, and encourages self-expression.",
+      "Build self confidence while having fun!",
+    ],
+    requirements: [
+      "Students will need a computer, tablet, or smart phone, and an internet connection.",
+      "Materials and Supplies needed for this course are listed in the Course Description.",
+      "Bring it: A desire to create some delightful works of art!",
+    ],
+    descriptionDetailed: [
+      "Do you know a young artist who would enjoy learning how to draw and paint with watercolor paints?  ",
+      "Are you looking for an experienced art teacher to guide them throughout the creative process?  ",
+      "Are you seeking a healthy activity that will encourage creativity and boost self-confidence?  ",
+      "This Drawing and Watercolor Painting course may be just what you are looking for! Designed with beginners in mind, this course is suitable for ALL AGES. With a total of 15 unique drawing and watercolor painting projects, students will learn the skills to create masterpieces of their own long after the course is complete.",
+      "The teaching process used for the drawing portion of each project is a step-by-step method that will inspire and delight students into drawing action! This process involves organizing shapes and lines together until a recognizable outcome is achieved.",
+      "After students complete the drawing portion of their project, they will move onto painting the project. Young artists will learn basic watercolor techniques and apply these techniques to complete their project. This Drawing and Watercolor Painting course is designed to give beginners the tools they need to begin their artistic journey into self-expression, reflection, and creative thinking.",
+      "Supplies and materials needed for this course: ",
+      " • watercolor paper",
+      " • watercolor paints",
+      " • paintbrushes",
+      " • crayons or oil pastels",
+      " • paper towels",
+      " • bowl of water",
+      " • mat to protect work area",
+      "**This course was updated 6/2022! ",
+      "Please Note: ",
+      "This course is intended to be purchased by a parent or guardian for use by a beginner artist or novice art student. Adult supervision is recommended. Per Udemy’s Policy: Those under 18 may use the services only if a parent or guardian opens their account, handles any enrollments, and manages their account usage.",
+      "I would love to hear from you. ",
+      "Please let me know if you have questions, comments, or suggestions. I am here to help :)",
+      "About the Instructor: ",
+      "My name is Miss Em and teaching art to children is what I love to do! I pride myself on creating dynamic, meaningful, and engaging art lessons that are taught in a relaxing and joyful way. I have over 20 years teaching experience in the elementary classroom and in the art studio, and I feel that I have a good grasp on how to create an environment that makes kids feel happy, motivated, confident, and successful.",
+      "I look forward to seeing you in this Drawing and Watercolor Painting course.",
+      "Let the creative fun begin! ",
+    ],
+    whoIsThisFor: [
+      "This is a drawing and watercolor painting course designed for beginners.",
+      "No drawing or painting experience is necessary to be successful in this course.",
+    ],
+    content: [
+      [
+        [
+          "Introduction, Course Goals, Examples of Projects, and Supplies Needed",
+        ],
+        [
+          "Introduction to this Course",
+          "Supplies and Materials Needed for This Course (Video)",
+          "Supplies and Materials Needed for This Course (Document)",
+        ],
+      ],
+      [
+        ["Draw and Paint a Night Owl"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw the Owl",
+          "Step 2: Watercolor Paint the Owl",
+        ],
+      ],
+      [
+        ["Draw and Watercolor Paint a Shark"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw the Shark",
+          "Step 2: Paint the Shark",
+        ],
+      ],
+      [
+        ["Draw and Paint a Fish"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw the Fish",
+          "Step 2: Paint the Fish",
+        ],
+      ],
+      [
+        ["Draw and Paint a Dog"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw a Dog",
+          "Step 2: Paint the Dog",
+        ],
+      ],
+      [
+        ["Draw and Paint a Frog"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw a Frog",
+          "Step 2: Paint the Frog",
+        ],
+      ],
+      [
+        ["Draw and Paint a Dragonfly"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw a Dragonfly",
+          "Step 2: Paint the Dragonfly",
+        ],
+      ],
+      [
+        ["Draw and Paint a Rooster"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw a Rooster",
+          "Step 2: Paint the Rooster",
+        ],
+      ],
+      [
+        ["Draw and Paint a Fox"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw a Fox",
+          "Step 2: Paint the Fox",
+        ],
+      ],
+      [
+        ["Draw and Paint an Elephant"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw an Elephant",
+          "Step 2: Paint the Elephant",
+        ],
+      ],
+      [
+        ["Draw and Paint a Tiger Cat"],
+        [
+          "Introduction and Supplies Needed for This Project",
+          "Step 1: Draw a Cat",
+          "Step 2: Paint the Cat",
+        ],
+      ],
+      [
+        ["Draw and Paint a Horse"],
+        [
+          "Introduction to This Project and Supplies Needed",
+          "Step 1: Draw a Horse",
+          "Step 2: Watercolor Paint the Horse and the Background",
+        ],
+      ],
+      [
+        ["Draw and Paint a Butterfly"],
+        [
+          "Introduction to This Project and Supplies Needed",
+          "Step 1: Draw a Butterfly Design",
+          "Step 2: Paint the Background",
+          "Step 3: Paint the Butterfly",
+          "Step 4: Paint the Flowers",
+        ],
+      ],
+      [
+        ["Bonus Project: Draw and Paint a Koala"],
+        [
+          "Introduction to This Project and Supplies Needed",
+          "Step 1: Draw a Koala Design",
+          "Step 2: Paint the Background",
+          "Step 3: Paint the Koala and Details",
+        ],
+      ],
+      [
+        ["Bonus Project: Draw and Paint a Moon Cat"],
+        [
+          "Introduction to This Project and Supplies Needed",
+          "Step 1: Draw a Cat Design",
+          "Step 2: Paint the Background",
+          "Step 3: Paint the Cat",
+        ],
+      ],
+      [
+        ["Bonus Project: Draw and Paint a Porcupine in a Cozy Sweater"],
+        [
+          "Introduction to This Project and Supplies Needed",
+          "Pattern Reference Sheet to Use for Ideas",
+          "Step 1: Draw a Porcupine Design",
+          "Step 2: Paint the Porcupine Design",
+        ],
+      ],
+      [
+        ["Thank You for Enrolling in This Course :)"],
+        ["Thank You for Enrolling in This Course :)"],
+      ],
+    ],
+  },
+  {
     id: 3,
     link: "https://www.udemy.com/course/python-for-beginners-learn-programming-from-scratch/",
     title: "Python for Beginners - Learn Programming from scratch",
@@ -583,200 +777,6 @@ export default [
         ],
       ],
       [["Bonus Lecture"], ["Bonus Lecture"]],
-    ],
-  },
-  {
-    id: 26,
-    link: "",
-    title: "Art for Kids & Beginners: 15 Easy Drawing & Painting Lessons",
-    instructor: 4,
-    author: "Em Winn",
-    image: "https://img-b.udemycdn.com/course/240x135/670050_69ff_3.jpg",
-    price: "1,199.99",
-    rating: 4.8,
-    people: "740",
-    category: "drawing",
-    bestseller: false,
-    learnings: [
-      "Create 15 Magnificent Watercolor Animal Paintings.",
-      "Apply the knowledge gained in this course to create unique masterpieces.",
-      "Participate in an activity that cultivates critical thinking skills, develops hand-eye coordination, and encourages self-expression.",
-      "Build self confidence while having fun!",
-    ],
-    requirements: [
-      "Students will need a computer, tablet, or smart phone, and an internet connection.",
-      "Materials and Supplies needed for this course are listed in the Course Description.",
-      "Bring it: A desire to create some delightful works of art!",
-    ],
-    descriptionDetailed: [
-      "Do you know a young artist who would enjoy learning how to draw and paint with watercolor paints?  ",
-      "Are you looking for an experienced art teacher to guide them throughout the creative process?  ",
-      "Are you seeking a healthy activity that will encourage creativity and boost self-confidence?  ",
-      "This Drawing and Watercolor Painting course may be just what you are looking for! Designed with beginners in mind, this course is suitable for ALL AGES. With a total of 15 unique drawing and watercolor painting projects, students will learn the skills to create masterpieces of their own long after the course is complete.",
-      "The teaching process used for the drawing portion of each project is a step-by-step method that will inspire and delight students into drawing action! This process involves organizing shapes and lines together until a recognizable outcome is achieved.",
-      "After students complete the drawing portion of their project, they will move onto painting the project. Young artists will learn basic watercolor techniques and apply these techniques to complete their project. This Drawing and Watercolor Painting course is designed to give beginners the tools they need to begin their artistic journey into self-expression, reflection, and creative thinking.",
-      "Supplies and materials needed for this course: ",
-      " • watercolor paper",
-      " • watercolor paints",
-      " • paintbrushes",
-      " • crayons or oil pastels",
-      " • paper towels",
-      " • bowl of water",
-      " • mat to protect work area",
-      "**This course was updated 6/2022! ",
-      "Please Note: ",
-      "This course is intended to be purchased by a parent or guardian for use by a beginner artist or novice art student. Adult supervision is recommended. Per Udemy’s Policy: Those under 18 may use the services only if a parent or guardian opens their account, handles any enrollments, and manages their account usage.",
-      "I would love to hear from you. ",
-      "Please let me know if you have questions, comments, or suggestions. I am here to help :)",
-      "About the Instructor: ",
-      "My name is Miss Em and teaching art to children is what I love to do! I pride myself on creating dynamic, meaningful, and engaging art lessons that are taught in a relaxing and joyful way. I have over 20 years teaching experience in the elementary classroom and in the art studio, and I feel that I have a good grasp on how to create an environment that makes kids feel happy, motivated, confident, and successful.",
-      "I look forward to seeing you in this Drawing and Watercolor Painting course.",
-      "Let the creative fun begin! ",
-    ],
-    whoIsThisFor: [
-      "This is a drawing and watercolor painting course designed for beginners.",
-      "No drawing or painting experience is necessary to be successful in this course.",
-    ],
-    content: [
-      [
-        [
-          "Introduction, Course Goals, Examples of Projects, and Supplies Needed",
-        ],
-        [
-          "Introduction to this Course",
-          "Supplies and Materials Needed for This Course (Video)",
-          "Supplies and Materials Needed for This Course (Document)",
-        ],
-      ],
-      [
-        ["Draw and Paint a Night Owl"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw the Owl",
-          "Step 2: Watercolor Paint the Owl",
-        ],
-      ],
-      [
-        ["Draw and Watercolor Paint a Shark"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw the Shark",
-          "Step 2: Paint the Shark",
-        ],
-      ],
-      [
-        ["Draw and Paint a Fish"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw the Fish",
-          "Step 2: Paint the Fish",
-        ],
-      ],
-      [
-        ["Draw and Paint a Dog"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw a Dog",
-          "Step 2: Paint the Dog",
-        ],
-      ],
-      [
-        ["Draw and Paint a Frog"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw a Frog",
-          "Step 2: Paint the Frog",
-        ],
-      ],
-      [
-        ["Draw and Paint a Dragonfly"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw a Dragonfly",
-          "Step 2: Paint the Dragonfly",
-        ],
-      ],
-      [
-        ["Draw and Paint a Rooster"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw a Rooster",
-          "Step 2: Paint the Rooster",
-        ],
-      ],
-      [
-        ["Draw and Paint a Fox"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw a Fox",
-          "Step 2: Paint the Fox",
-        ],
-      ],
-      [
-        ["Draw and Paint an Elephant"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw an Elephant",
-          "Step 2: Paint the Elephant",
-        ],
-      ],
-      [
-        ["Draw and Paint a Tiger Cat"],
-        [
-          "Introduction and Supplies Needed for This Project",
-          "Step 1: Draw a Cat",
-          "Step 2: Paint the Cat",
-        ],
-      ],
-      [
-        ["Draw and Paint a Horse"],
-        [
-          "Introduction to This Project and Supplies Needed",
-          "Step 1: Draw a Horse",
-          "Step 2: Watercolor Paint the Horse and the Background",
-        ],
-      ],
-      [
-        ["Draw and Paint a Butterfly"],
-        [
-          "Introduction to This Project and Supplies Needed",
-          "Step 1: Draw a Butterfly Design",
-          "Step 2: Paint the Background",
-          "Step 3: Paint the Butterfly",
-          "Step 4: Paint the Flowers",
-        ],
-      ],
-      [
-        ["Bonus Project: Draw and Paint a Koala"],
-        [
-          "Introduction to This Project and Supplies Needed",
-          "Step 1: Draw a Koala Design",
-          "Step 2: Paint the Background",
-          "Step 3: Paint the Koala and Details",
-        ],
-      ],
-      [
-        ["Bonus Project: Draw and Paint a Moon Cat"],
-        [
-          "Introduction to This Project and Supplies Needed",
-          "Step 1: Draw a Cat Design",
-          "Step 2: Paint the Background",
-          "Step 3: Paint the Cat",
-        ],
-      ],
-      [
-        ["Bonus Project: Draw and Paint a Porcupine in a Cozy Sweater"],
-        [
-          "Introduction to This Project and Supplies Needed",
-          "Pattern Reference Sheet to Use for Ideas",
-          "Step 1: Draw a Porcupine Design",
-          "Step 2: Paint the Porcupine Design",
-        ],
-      ],
-      [
-        ["Thank You for Enrolling in This Course :)"],
-        ["Thank You for Enrolling in This Course :)"],
-      ],
     ],
   },
 ];

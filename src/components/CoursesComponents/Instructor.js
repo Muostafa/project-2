@@ -1,5 +1,4 @@
 import React, { useState, forwardRef } from "react";
-import x from "../../pages/instructors";
 import styles from "../../styles/CoursePage/instructor.module.css";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import StarIcon from "@mui/icons-material/Star";

@@ -1,5 +1,6 @@
    .card{
     max-width: 242px;
+    padding: 0rem 0.2rem;
    }
    .link{
     text-decoration: none;
@@ -53,7 +54,6 @@
     position: relative;
     width: 100%;
     border: 1px solid #d1d7dc;
-    padding: 1rem 1.8rem;
     margin: 0 0 20px 0;
     overflow: hidden;
     box-sizing: border-box;
@@ -130,6 +130,7 @@
   }
   .pythonArticle {
     margin-bottom: 20px;
+    margin: 1rem 1.8rem;
   }
   
   @media only screen and (max-width: 1300px) {

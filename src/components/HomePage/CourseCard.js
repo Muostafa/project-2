@@ -29,7 +29,7 @@ function CourseCard({ course }) {
           />
           <h3 className={styles.reviewsNumber}>({course.people})</h3>
         </div>
-        <h3>E£{course.price}</h3>
+        <h3 style={{fontWeight:"800"}}>E£{course.price}</h3>
         {course.bestseller && (
           <aside className={styles.bestseller}>Bestseller</aside>
         )}
