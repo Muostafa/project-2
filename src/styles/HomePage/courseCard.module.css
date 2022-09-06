@@ -17,6 +17,7 @@
     overflow: hidden;
     box-sizing: border-box;
     overflow-y: hidden;
+    padding-top: 1rem;
   }
   .courseContent {
     box-sizing: border-box;
