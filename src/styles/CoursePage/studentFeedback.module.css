@@ -12,9 +12,9 @@
   margin-right: 1rem;
 }
 .feedback {
-height: 10rem;
-display: flex;
-flex-direction: row;
+  min-height: 9rem;
+  display: flex;
+  flex-direction: row;
 }
 .averageRating {
   display: flex;
@@ -25,10 +25,10 @@ flex-direction: row;
   width: 8rem;
   max-width: 8rem;
 }
-.rating{
+.rating {
   margin-bottom: 0.4rem;
 }
-.bars{
+.bars {
   flex: 1;
   flex-grow: 1;
   display: flex;
@@ -43,13 +43,13 @@ flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.percentageText{
+.percentageText {
   color: #5624d0;
   font-size: 0.9rem;
   text-decoration-line: underline;
   font-weight: 300;
 }
-.barContainer:hover{
+.barContainer:hover {
   cursor: pointer;
 }
 .container > h3 {
@@ -72,4 +72,14 @@ flex-direction: row;
   color: #b4690e;
   line-height: 1rem;
   font-weight: 800;
+}
+@media only screen and (max-width: 550px) {
+  .feedback {
+    flex-direction: column;
+  }
+  .averageRating {
+    flex-direction: row !important;
+    max-width: unset;
+    width: unset;
+  }
 }
