@@ -13,6 +13,7 @@ export default [
     people: "2,948",
     category: "python",
     bestseller: true,
+    ratingsSplit: [43, 37, 15, 3, 2],
     learnings: [
       "Create their own Python Programs",
       "Become an experienced Python Programmer",
@@ -265,6 +266,7 @@ export default [
       "Have a computer (either Mac, Windows, or Linux)",
       "Desire to learn!",
     ],
+    ratingsSplit: [51, 29, 12, 5, 3],
     learnings: [
       "Have an intermediate skill level of Python programming.",
       "Use the Jupyter Notebook Environment.",
@@ -389,6 +391,7 @@ export default [
     people: "740",
     category: "drawing",
     bestseller: false,
+    ratingsSplit: [60, 28, 7, 3, 2],
     learnings: [
       "Create 15 Magnificent Watercolor Animal Paintings.",
       "Apply the knowledge gained in this course to create unique masterpieces.",
@@ -589,6 +592,7 @@ export default [
       "To learn the python language",
       "To learn the CORE skills to understand any programming language",
     ],
+    ratingsSplit: [43, 39, 15, 2, 1],
     requirements: ["NO programming knowledge required "],
     descriptionDetailed: [
       "NEW PYTHON CODE ",
@@ -708,6 +712,7 @@ export default [
     people: "1,734",
     category: "web development",
     bestseller: true,
+    ratingsSplit: [43, 37, 15, 3, 2],
     learnings: [
       "Understand the technologies used in web development",
       "Identify the tools used by web developers",

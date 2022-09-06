@@ -6,6 +6,7 @@ import StarIcon from "@mui/icons-material/Star";
 import BarWithPercentage from "./BarWithPercentage";
 
 function StudentFeedback({ course }) {
+  const percentages = course.ratingsSplit
   return (
     <div className={styles.container}>
       <h3 style={{ marginBottom: "1rem" }}>Student feedback</h3>
@@ -29,11 +30,11 @@ function StudentFeedback({ course }) {
           <h3 className={styles.courseRating}>Course Rating</h3>
         </div>
         <div className={styles.bars}>
-          <BarWithPercentage stars={5} percentage={43} />
-          <BarWithPercentage stars={4} percentage={37} />
-          <BarWithPercentage stars={3} percentage={15} />
-          <BarWithPercentage stars={2} percentage={3} />
-          <BarWithPercentage stars={1} percentage={2} />
+          <BarWithPercentage stars={5} percentage={percentages[0]} />
+          <BarWithPercentage stars={4} percentage={percentages[1]} />
+          <BarWithPercentage stars={3} percentage={percentages[2]} />
+          <BarWithPercentage stars={2} percentage={percentages[3]} />
+          <BarWithPercentage stars={1} percentage={percentages[4]} />
         </div>
       </div>
     </div>
