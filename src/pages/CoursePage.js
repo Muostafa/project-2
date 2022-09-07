@@ -40,6 +40,7 @@ function CoursePage({ courses }) {
   const topContainerRef = useRef();
   const contentRef = useRef();
   const instructorRef = useRef();
+  const reviewRef = useRef();
   const footerRef = useRef();
   const whatYouLearnRef = useRef();
   const footerOnScreen = useOnScreen(footerRef, "0px");
@@ -47,7 +48,14 @@ function CoursePage({ courses }) {
 
   return (
     <refsContext.Provider
-      value={{ whatYouLearnRef, contentRef, instructorRef, value, setValue }}
+      value={{
+        whatYouLearnRef,
+        contentRef,
+        instructorRef,
+        reviewRef,
+        value,
+        setValue,
+      }}
     >
       <div className="home-page">
         <NavBar />
@@ -60,6 +68,7 @@ function CoursePage({ courses }) {
           <div className="course-page-contents">
             <Sidebar
               course={course}
+              footerRef={footerRef}
               footerOnScreen={footerOnScreen}
               topContainerOnScreen={topContainerOnScreen}
             />
@@ -69,7 +78,7 @@ function CoursePage({ courses }) {
             <Description course={course} />
             <Instructor ref={instructorRef} instructor={instructor} />
             <StudentFeedback course={course} />
-            <Review course={course} />
+            <Review ref={reviewRef} course={course} />
           </div>
         </div>
         <Footer ref={footerRef} />

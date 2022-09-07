@@ -1,13 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "../../styles/CoursePage/studentFeedback.module.css";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import BarWithPercentage from "./BarWithPercentage";
 
-function Review({ course }) {
+const Review = forwardRef(({ course }, ref) => {
   const percentages = course.ratingsSplit;
   return (
-    <div className={styles.container}>
+    <div ref = {ref} className={styles.container}>
       <h3 style={{ marginBottom: "1rem" }}>Reviews</h3>
       <div className={styles.feedback}>
         <div className={styles.averageRating}>
@@ -46,6 +46,6 @@ function Review({ course }) {
       </div>
     </div>
   );
-}
+});
 
 export default Review;

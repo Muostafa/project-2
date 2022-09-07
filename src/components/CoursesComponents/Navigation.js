@@ -10,7 +10,14 @@ const buttonStyle = {
 };
 
 function Navigation() {
-  const { whatYouLearnRef, contentRef, instructorRef ,value, setValue} = useContext(refsContext);
+  const {
+    whatYouLearnRef,
+    contentRef,
+    instructorRef,
+    reviewRef,
+    value,
+    setValue,
+  } = useContext(refsContext);
 
   const navStyle = {
     width: "100%",
@@ -72,7 +79,7 @@ function Navigation() {
             value="reviews"
             label="REVIEWS"
             onClick={() => {
-              var topOfElement = instructorRef.current.offsetTop - 127;
+              var topOfElement = reviewRef.current.offsetTop - 127;
               window.scroll({
                 top: topOfElement,
                 behavior: "smooth",

@@ -8,7 +8,11 @@ import BrowserUpdatedIcon from "@mui/icons-material/BrowserUpdated";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import OndemandVideoOutlinedIcon from "@mui/icons-material/OndemandVideoOutlined";
 
-function Sidebar({ course, topContainerOnScreen }) {
+function Sidebar({ course, footerRef, footerOnScreen, topContainerOnScreen }) {
+  var footerLocation = footerRef.current
+    ? footerRef.current.offsetTop - 845
+    : 0;
+  console.log(footerLocation);
   const sidebarStyle = {
     width: "20rem",
     zIndex: "7",
@@ -22,13 +26,16 @@ function Sidebar({ course, topContainerOnScreen }) {
   };
   if (topContainerOnScreen) {
     sidebarStyle.top = "5.5rem";
-    delete sidebarStyle.bottom;
+    sidebarStyle.position = "absolute";
+  } else if (footerOnScreen) {
+    sidebarStyle.position = "absolute";
+    sidebarStyle.top = footerLocation;
     sidebarStyle.zIndex = "3";
   }
   return (
     <div className="webpage" style={sidebarStyle}>
-      {( topContainerOnScreen) && (
-        <div className={styles.courseImg} >
+      {(footerOnScreen || topContainerOnScreen) && (
+        <div className={styles.courseImg}>
           <img alt="Course" width={"100%"} height={"auto"} src={course.image} />
           <div className={styles.iconContainer}>
             <PlayArrowIcon
