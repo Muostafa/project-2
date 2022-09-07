@@ -254,6 +254,30 @@ export default [
         userTitle: "Jacques Steyn",
         userInitials: "JS",
       },
+      {
+        content:
+          "Sometimes confusing but was able to clarify. Good job nonetheless.",
+        rating: 3.0,
+        created_formatted_with_time_since: "3 weeks ago",
+        userTitle: "Asif H.",
+        userInitials: "AH",
+      },
+      {
+        content:
+          "In depth concepts of python have been clearly explained. Good chemistry between student and instructor. Fantastic course. Completed every vid and had lot of fun",
+        rating: 5,
+        created_formatted_with_time_since: "2 months  ago",
+        userTitle: "Saurish R.",
+        userInitials: "SR",
+      },
+      {
+        content:
+          "i can't say as i have not taken that many classes yet but so far it is good.",
+        rating: 4,
+        created_formatted_with_time_since: "2 weeks ago",
+        userTitle: "Shiristi",
+        userInitials: "S",
+      },
     ],
   },
   {

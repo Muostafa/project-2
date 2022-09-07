@@ -13,7 +13,7 @@ import NavBar from "../components/NavBar";
 import useOnScreen from "../hooks/useOnScreen";
 import instructors from "../pages/instructors";
 import StudentFeedback from "../components/CoursesComponents/StudentFeedback";
-import Review from "../components/CoursesComponents/Review";
+import Reviews from "../components/CoursesComponents/Reviews";
 
 //to pass the refs to navigator
 export const refsContext = createContext();
@@ -78,7 +78,7 @@ function CoursePage({ courses }) {
             <Description course={course} />
             <Instructor ref={instructorRef} instructor={instructor} />
             <StudentFeedback course={course} />
-            <Review ref={reviewRef} course={course} />
+            <Reviews ref={reviewRef} course={course} />
           </div>
         </div>
         <Footer ref={footerRef} />

@@ -12,7 +12,6 @@ function Sidebar({ course, footerRef, footerOnScreen, topContainerOnScreen }) {
   var footerLocation = footerRef.current
     ? footerRef.current.offsetTop - 845
     : 0;
-  console.log(footerLocation);
   const sidebarStyle = {
     width: "20rem",
     zIndex: "7",
