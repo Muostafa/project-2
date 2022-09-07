@@ -245,6 +245,16 @@ export default [
       ],
       [["What's Next?"], ["Up and Beyond!"]],
     ],
+    reviews: [
+      {
+        content:
+          "The sound is subpar. The majority of the time, I played at MAX volume. Although the content is extremely basic, I learned a lot.\nThank you very much!",
+        rating: 3.0,
+        created_formatted_with_time_since: "2 weeks ago",
+        userTitle: "Jacques Steyn",
+        userInitials: "JS",
+      },
+    ],
   },
   {
     id: 2,
