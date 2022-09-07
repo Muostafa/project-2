@@ -13,6 +13,7 @@ import NavBar from "../components/NavBar";
 import useOnScreen from "../hooks/useOnScreen";
 import instructors from "../pages/instructors";
 import StudentFeedback from "../components/CoursesComponents/StudentFeedback";
+import Review from "../components/CoursesComponents/Review";
 
 //to pass the refs to navigator
 export const refsContext = createContext();
@@ -45,7 +46,9 @@ function CoursePage({ courses }) {
   const topContainerOnScreen = useOnScreen(topContainerRef, "-60px");
 
   return (
-    <refsContext.Provider value={{ whatYouLearnRef, contentRef, instructorRef ,value, setValue}}>
+    <refsContext.Provider
+      value={{ whatYouLearnRef, contentRef, instructorRef, value, setValue }}
+    >
       <div className="home-page">
         <NavBar />
         <TopContainer
@@ -63,9 +66,10 @@ function CoursePage({ courses }) {
             <WhatYouWillLearn ref={whatYouLearnRef} course={course} />
             <CourseContent course={course} ref={contentRef} />
             <Requirements course={course} />
-            <Description course = {course}/>
-            <Instructor ref={instructorRef} instructor={instructor}/>
-            <StudentFeedback course={course}/>
+            <Description course={course} />
+            <Instructor ref={instructorRef} instructor={instructor} />
+            <StudentFeedback course={course} />
+            <Review course={course} />
           </div>
         </div>
         <Footer ref={footerRef} />

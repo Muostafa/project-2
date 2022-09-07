@@ -25,6 +25,14 @@ function CoursesContainer({ courses, title, description }) {
         <h3>{title}</h3>
         <p style={textStyle}>{description}</p>
       </article>
+      <div
+        className="webpage"
+        style={{margin: "6px 0 30px 0", padding: "0", display: "flex", margin:"0px 0px 0px 1.8rem"}}
+      >
+        <a href="" className="white-button">
+          <h3 className="explore-button">Explore Python</h3>
+        </a>
+      </div>
       <div className={styles.coursesPictures}>{coursesList}</div>
     </div>
   );

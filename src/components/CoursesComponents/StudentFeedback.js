@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "../../styles/CoursePage/studentFeedback.module.css";
-import LinearDeterminate from "./LinearDeterminate";
 import Rating from "@mui/material/Rating";
 import StarIcon from "@mui/icons-material/Star";
 import BarWithPercentage from "./BarWithPercentage";
@@ -13,7 +12,13 @@ function StudentFeedback({ course }) {
       <div className={styles.feedback}>
         <div className={styles.averageRating}>
           <h3 className={styles.ratingText}>4.4</h3>
-          <div style={{display:"flex", flexDirection:"column"}}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
+          >
             <Rating
               className={styles.rating}
               style={{ fontSize: "1.4rem" }}
