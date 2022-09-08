@@ -26,3 +26,19 @@
 .feedback > * {
   color: #1c1d1f !important;
 }
+.feedback > p {
+  font-size: 0.8  rem;
+}
+.userTitle > h4 {
+  margin-left: 0.7rem;
+}
+.review > * {
+  margin: 0.6rem 0;
+}
+.userTitle > * {
+  padding: 0.2rem 0;
+}
+.rating > h5 {
+  color: #6a6f73;
+  font-weight: 400;
+}

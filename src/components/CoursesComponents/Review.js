@@ -22,7 +22,6 @@ const Review = ({ review }) => {
     setDislike((like) => !like);
   };
   return (
-
       <div className={styles.review}>
         <div className={styles.userInfo}>
           <Avatar sx={{ bgcolor: "#1c1d1f", fontWeight: "600" }}>
@@ -32,7 +31,7 @@ const Review = ({ review }) => {
             <h4>{review.userTitle}</h4>
             <div className={styles.rating}>
               <Rating
-                style={{ fontSize: "1rem", margin: "0 0.5rem" }}
+                style={{ fontSize: "1.1rem", margin: "0 0.5rem" }}
                 name="text-feedback"
                 value={review.rating}
                 readOnly
@@ -40,7 +39,7 @@ const Review = ({ review }) => {
                 emptyIcon={
                   <StarIcon
                     className={styles.star}
-                    style={{ fontSize: "1rem" }}
+                    style={{ fontSize: "1.1rem" }}
                   />
                 }
               />
@@ -54,7 +53,8 @@ const Review = ({ review }) => {
           <p>{review.content}</p>
         </div>
         <div className={styles.feedback} >
-          <p>Helpful?</p>
+          {(!like && !dislike)&&<p>Helpful?</p>}
+          {(like || dislike) && <p>Thank you for feedback</p>}
           {!like && (
             <IconButton onClick={likeHandle}>
               <ThumbUpOffAltIcon />
