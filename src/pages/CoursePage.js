@@ -11,13 +11,12 @@ import Description from "../components/CoursesComponents/Description";
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import useOnScreen from "../hooks/useOnScreen";
-import instructors from "../pages/instructors";
 import StudentFeedback from "../components/CoursesComponents/StudentFeedback";
 import Reviews from "../components/CoursesComponents/Reviews";
 
 //to pass the refs to navigator
 export const refsContext = createContext();
-function CoursePage({ courses }) {
+function CoursePage({ courses , instructors}) {
   //extract course id from the url
   const params = useParams();
   const courseID = params.ID;

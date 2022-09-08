@@ -1,11 +1,8 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  position: relative;
+.review {
   width: 100%;
   overflow: hidden;
   color: #1c1d1f;
+  border-top: 1px solid #d1d7dc;
 }
 .container > h3 {
   font-size: x-large;

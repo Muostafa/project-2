@@ -1,6 +1,7 @@
 import React from "react";
 import CourseCard from "./CourseCard";
 import styles from "../../styles/HomePage/courseCard.module.css";
+import CircularProgress from "@mui/material/CircularProgress";
 
 function CoursesContainer({ courses, title, description }) {
   //max 3 lines for description
@@ -27,12 +28,18 @@ function CoursesContainer({ courses, title, description }) {
       </article>
       <div
         className="webpage"
-        style={{margin: "6px 0 30px 0", padding: "0", display: "flex", margin:"0px 0px 0px 1.8rem"}}
+        style={{
+          margin: "6px 0 30px 0",
+          padding: "0",
+          display: "flex",
+          margin: "0px 0px 0px 1.8rem",
+        }}
       >
         <a href="" className="white-button">
           <h3 className="explore-button">Explore Python</h3>
         </a>
       </div>
+      <CircularProgress style={{margin:"auto"}} color="secondary" />
       <div className={styles.coursesPictures}>{coursesList}</div>
     </div>
   );
