@@ -3,28 +3,34 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import courses from "./pages/courses";
 import CoursePage from "./pages/CoursePage";
-import { useState } from "react";
+import { useState, createContext, useEffect } from "react";
 import useFetch from "./hooks/useFetch";
-
+export const dataContext = createContext();
 function App() {
-  const { loading, error, value } = useFetch(
-    'https://api.npoint.io/1f3c0239d8c5b56edfa4',
-    {},
-    []
-  )
-  if(value)
+  const [isLoading, setIsLoading] = useState(true);
+  const [data, setData] = useState("");
+  useEffect(() => {
+    setIsLoading(true);
+    fetch(`https://api.npoint.io/1f3c0239d8c5b56edfa4`)
+      .then((res) => res.json())
+      .then((result) => {
+        setData(result)
+        console.log(result)
+        setIsLoading(false)
+      })
+      .catch(console.log);
+  }, []);
   return (
-    <div className="App">
-      <div style={{ minHeight: "100vh" }}>
-        <Routes>
-          <Route path="/" element={<HomePage courses={value.courses}/>}></Route>
-          <Route
-            path="/course/:ID"
-            element={<CoursePage courses={value.courses} instructors={value.instructors}/>}
-          ></Route>
-        </Routes>
+    <dataContext.Provider value={{data, isLoading}}>
+      <div className="App">
+        <div style={{ minHeight: "100vh" }}>
+          <Routes>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/course/:ID" element={<CoursePage />}></Route>
+          </Routes>
+        </div>
       </div>
-    </div>
+    </dataContext.Provider>
   );
 }
 export default App;

@@ -1,4 +1,4 @@
-import React, { useState, useRef, createContext } from "react";
+import React, { useState, useRef, createContext, useContext } from "react";
 import { useParams } from "react-router-dom";
 import CourseBlackBar from "../components/CoursesComponents/CourseBlackBar";
 import CourseContent from "../components/CoursesComponents/CourseContent";
@@ -13,10 +13,13 @@ import NavBar from "../components/NavBar";
 import useOnScreen from "../hooks/useOnScreen";
 import StudentFeedback from "../components/CoursesComponents/StudentFeedback";
 import Reviews from "../components/CoursesComponents/Reviews";
-
+import { dataContext } from "../App";
 //to pass the refs to navigator
 export const refsContext = createContext();
-function CoursePage({ courses , instructors}) {
+function CoursePage() {
+  const { data } = useContext(dataContext);
+  let courses = data ? data.courses : [];
+  let instructors = data ? data.instructors : [];
   //extract course id from the url
   const params = useParams();
   const courseID = params.ID;
@@ -26,15 +29,16 @@ function CoursePage({ courses , instructors}) {
 
   //get course id
   let course = 0;
-  courses.forEach(function (x) {
-    if (x.id == courseID) course = x;
-  });
-
+  if (courses)
+    courses.forEach(function (x) {
+      if (x.id == courseID) course = x;
+    });
   //get instructor
   let instructor = 0;
-  instructors.forEach(function (x) {
-    if (x.id == course.instructor) instructor = x;
-  });
+  if (instructors)
+    instructors.forEach(function (x) {
+      if (x.id == course.instructor) instructor = x;
+    });
 
   const topContainerRef = useRef();
   const contentRef = useRef();

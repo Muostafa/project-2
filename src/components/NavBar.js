@@ -4,13 +4,14 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCartOutlined";
 import LanguageIcon from "@mui/icons-material/LanguageOutlined";
+import { useNavigate } from "react-router-dom";
 
 function NavBar() {
   const [searchText, setSearchText] = useState("");
+  const navigate = useNavigate();
   const handleSearch = (e) => {
     e.preventDefault();
-    //redirect to homepage with search queue
-    window.location.href = searchText ? `/?search=${searchText}` : `/`;
+    navigate(searchText?`/?search=${searchText}`:"/")
   };
   
   return (
