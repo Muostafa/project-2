@@ -342,35 +342,27 @@ export default {
       reviews: [
         {
           content:
-            "The sound is subpar. The majority of the time, I played at MAX volume. Although the content is extremely basic, I learned a lot.\nThank you very much!",
-          rating: 3.0,
-          created_formatted_with_time_since: "2 weeks ago",
-          userTitle: "Jacques Steyn",
-          userInitials: "JS",
+            "His voice in each video can either be audible or barely audible. If it was consistent then it would be fine, but I have to keep adjusting the volume.",
+          rating: 2.5,
+          created_formatted_with_time_since: "4 weeks ago",
+          userTitle: "Bryan P.",
+          userInitials: "BP",
         },
         {
           content:
-            "Sometimes confusing but was able to clarify. Good job nonetheless.",
-          rating: 3.0,
-          created_formatted_with_time_since: "3 weeks ago",
-          userTitle: "Asif H.",
-          userInitials: "AH",
+            "Awesome teacher! I'm enjoying the presented course material and learning a lot. Thank you Jose !!!!!",
+          rating: 5.0,
+          created_formatted_with_time_since: "4 weeks ago",
+          userTitle: "Justin M.",
+          userInitials: "JM",
         },
         {
           content:
-            "In depth concepts of python have been clearly explained. Good chemistry between student and instructor. Fantastic course. Completed every vid and had lot of fun",
-          rating: 5,
-          created_formatted_with_time_since: "2 months  ago",
-          userTitle: "Saurish R.",
-          userInitials: "SR",
-        },
-        {
-          content:
-            "i can't say as i have not taken that many classes yet but so far it is good.",
-          rating: 4,
-          created_formatted_with_time_since: "2 weeks ago",
-          userTitle: "Shiristi",
-          userInitials: "S",
+            "Really enjoyed the course, being a total beginner it really set a good foundation.",
+          rating: 4.5,
+          created_formatted_with_time_since: "5 months  ago",
+          userTitle: "Sechaba M.",
+          userInitials: "SM",
         },
       ],
       content: [
@@ -503,72 +495,38 @@ export default {
       ],
       reviews: [
         {
-          content:
-            "The sound is subpar. The majority of the time, I played at MAX volume. Although the content is extremely basic, I learned a lot.\nThank you very much!",
-          rating: 3.0,
+          content: "Very fun",
+          rating: 5.0,
           created_formatted_with_time_since: "2 weeks ago",
-          userTitle: "Jacques Steyn",
-          userInitials: "JS",
+          userTitle: "amit J.",
+          userInitials: "AJ",
         },
         {
           content:
-            "Sometimes confusing but was able to clarify. Good job nonetheless.",
-          rating: 3.0,
-          created_formatted_with_time_since: "3 weeks ago",
-          userTitle: "Asif H.",
-          userInitials: "AH",
+            "i was a little depressed when i did this project, thinking it was too easy. Bu then I tried it, and as easy as it was it made me happier! I LOVED this experience!!!",
+          rating: 5.0,
+          created_formatted_with_time_since: "2 years ago",
+          userTitle: "Rika S.",
+          userInitials: "RS",
         },
         {
           content:
-            "In depth concepts of python have been clearly explained. Good chemistry between student and instructor. Fantastic course. Completed every vid and had lot of fun",
+            "Yes, It is was great learning for me I thought that I would be difficult for me but something else! It was very easy!",
           rating: 5,
-          created_formatted_with_time_since: "2 months  ago",
-          userTitle: "Saurish R.",
-          userInitials: "SR",
+          created_formatted_with_time_since: "7 months  ago",
+          userTitle: "Swati G.",
+          userInitials: "SG",
         },
         {
           content:
-            "i can't say as i have not taken that many classes yet but so far it is good.",
-          rating: 4,
-          created_formatted_with_time_since: "2 weeks ago",
-          userTitle: "Shiristi",
-          userInitials: "S",
+            "Simply yet informative and productive. I felt so good learning to use water colour this way. Made me feel like a real artist.",
+          rating: 5,
+          created_formatted_with_time_since: "2 months ago",
+          userTitle: "Arnel W.",
+          userInitials: "AW",
         },
       ],
-      reviews: [
-        {
-          content:
-            "The sound is subpar. The majority of the time, I played at MAX volume. Although the content is extremely basic, I learned a lot.\nThank you very much!",
-          rating: 3.0,
-          created_formatted_with_time_since: "2 weeks ago",
-          userTitle: "Jacques Steyn",
-          userInitials: "JS",
-        },
-        {
-          content:
-            "Sometimes confusing but was able to clarify. Good job nonetheless.",
-          rating: 3.0,
-          created_formatted_with_time_since: "3 weeks ago",
-          userTitle: "Asif H.",
-          userInitials: "AH",
-        },
-        {
-          content:
-            "In depth concepts of python have been clearly explained. Good chemistry between student and instructor. Fantastic course. Completed every vid and had lot of fun",
-          rating: 5,
-          created_formatted_with_time_since: "2 months  ago",
-          userTitle: "Saurish R.",
-          userInitials: "SR",
-        },
-        {
-          content:
-            "i can't say as i have not taken that many classes yet but so far it is good.",
-          rating: 4,
-          created_formatted_with_time_since: "2 weeks ago",
-          userTitle: "Shiristi",
-          userInitials: "S",
-        },
-      ],
+
       content: [
         [
           [
@@ -729,6 +687,40 @@ export default {
         "To learn the python language",
         "To learn the CORE skills to understand any programming language",
       ],
+      reviews: [
+        {
+          content:
+            "i am a homemaker learning languages on udemy hoping for a better future , i hope this will help me in achieving what i want . I am so far able to understand lecture let 's see what comes ahead .",
+          rating: 3.0,
+          created_formatted_with_time_since: "3 weeks ago",
+          userTitle: "Ashu C.",
+          userInitials: "AC",
+        },
+        {
+          content:
+            "This was a great learning experience. It was fun and I learned a lot.",
+          rating: 4.5,
+          created_formatted_with_time_since: "4 months ago",
+          userTitle: "Mike M.",
+          userInitials: "MM",
+        },
+        {
+          content:
+            "In depth concepts of python have been clearly explained. Good chemistry between student and instructor. Fantastic course. Completed every vid and had lot of fun",
+          rating: 5,
+          created_formatted_with_time_since: "2 months  ago",
+          userTitle: "Saurish R.",
+          userInitials: "SR",
+        },
+        {
+          content:
+            "Yea in simple terms I really enjoyed this one and it was pretty easy to grab the concepts as a beginner, especially based on the way our instructor explained.",
+          rating: 4,
+          created_formatted_with_time_since: "2 weeks ago",
+          userTitle: "Sagnik B.",
+          userInitials: "SB",
+        },
+      ],
       ratingsSplit: [43, 39, 15, 2, 1],
       requirements: ["NO programming knowledge required "],
       descriptionDetailed: [
@@ -853,35 +845,19 @@ export default {
       reviews: [
         {
           content:
-            "The sound is subpar. The majority of the time, I played at MAX volume. Although the content is extremely basic, I learned a lot.\nThank you very much!",
-          rating: 3.0,
-          created_formatted_with_time_since: "2 weeks ago",
-          userTitle: "Jacques Steyn",
-          userInitials: "JS",
+            "Es bueno pero creo que un poco desacualizado en algunos puntos, pero es entendible por el año publicado.",
+          rating: 3.5,
+          created_formatted_with_time_since: "2 months ago",
+          userTitle: "Belem M.",
+          userInitials: "BM",
         },
         {
           content:
-            "Sometimes confusing but was able to clarify. Good job nonetheless.",
-          rating: 3.0,
-          created_formatted_with_time_since: "3 weeks ago",
-          userTitle: "Asif H.",
-          userInitials: "AH",
-        },
-        {
-          content:
-            "In depth concepts of python have been clearly explained. Good chemistry between student and instructor. Fantastic course. Completed every vid and had lot of fun",
-          rating: 5,
-          created_formatted_with_time_since: "2 months  ago",
-          userTitle: "Saurish R.",
-          userInitials: "SR",
-        },
-        {
-          content:
-            "i can't say as i have not taken that many classes yet but so far it is good.",
-          rating: 4,
-          created_formatted_with_time_since: "2 weeks ago",
-          userTitle: "Shiristi",
-          userInitials: "S",
+            "It is giving a enough explanation.But one thing I suggested that help to learners by giving access for practicing.",
+          rating: 4.0,
+          created_formatted_with_time_since: "3 months ago",
+          userTitle: "Venkata M.",
+          userInitials: "VM",
         },
       ],
       learnings: [

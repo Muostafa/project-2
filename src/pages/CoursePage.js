@@ -1,4 +1,4 @@
-import React, { useState, useRef, createContext, useContext } from "react";
+import React, { useState, useRef, createContext, useContext , useEffect} from "react";
 import { useParams } from "react-router-dom";
 import CourseBlackBar from "../components/CoursesComponents/CourseBlackBar";
 import CourseContent from "../components/CoursesComponents/CourseContent";
@@ -39,6 +39,9 @@ function CoursePage() {
     instructors.forEach(function (x) {
       if (x.id == course.instructor) instructor = x;
     });
+  useEffect(() => {
+    window.scroll({ top: 0 });
+  }, []);
 
   const topContainerRef = useRef();
   const contentRef = useRef();

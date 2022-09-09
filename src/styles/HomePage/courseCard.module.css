@@ -133,7 +133,16 @@
     margin-bottom: 20px;
     margin: 1rem 1.8rem;
   }
-  
+  .popup{
+    visibility: hidden;
+    display: none;
+    position: absolute;
+  }
+  .card:hover > .popup{
+    visibility: unset;
+    display: unset;
+    position: unset;
+  }
   @media only screen and (max-width: 1300px) {
     .coursesContainer {
       width: 96%;
