@@ -14,9 +14,8 @@
     align-items: center;
     justify-content: space-around;
     padding: 0 0.2rem;
-    overflow: hidden;
+    margin-bottom: 2.4rem;
     box-sizing: border-box;
-    overflow-y: hidden;
     padding-top: 1rem;
   }
   .courseContent {

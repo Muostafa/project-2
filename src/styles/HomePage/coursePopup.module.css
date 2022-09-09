@@ -3,15 +3,16 @@
   position: absolute;
   color: hsl(220, 5%, 12%);
   top: 0rem;
-  left: 18rem;
+  left: 17rem;
   transform: translateY(-0.8rem);
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
-  width: 15rem;
+  width: calc(min(15rem, 100%));
   margin: 0 auto;
   box-shadow: 0 -2px 4px rgb(0 0 0 / 8%), 0 -4px 12px rgb(0 0 0 / 16%);
   z-index: 2;
+  padding: 1rem
 }
 
 .bestseller {
@@ -41,10 +42,16 @@
   font-size: large;
   font-weight: 700;
 }
+.container > p {
+font-size: small;
+}
+.container > * {
+   margin: 0.2rem 0;
+}
 .learnings > div {
   display: flex;
   flex-direction: row;
-  font-size: small;
+  font-size: 12px;
   line-height: 1.3rem;
   margin: 0.2rem 0;
 }

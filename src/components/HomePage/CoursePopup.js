@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import courses from "../../pages/courses";
+import React from "react";
 import styles from "../../styles/HomePage/coursePopup.module.css";
 import CheckIcon from "@mui/icons-material/Check";
 function CoursePopup({ course }) {
-  const [liked, setLiked] = useState(false);
   let learnings = "";
   if (course.learnings)
-    learnings = course.learnings.slice(0, 3).map((learning, index) => (
+    learnings = course.learnings.slice(0, 2).map((learning, index) => (
       <div key={index}>
         <CheckIcon className={styles.checkMark} fontSize="small" />
         <p>{learning}</p>
