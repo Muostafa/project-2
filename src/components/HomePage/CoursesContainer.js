@@ -36,9 +36,9 @@ function CoursesContainer({ courses, title, description }) {
           margin: "0px 0px 0px 1.8rem",
         }}
       >
-        <a href="" className="white-button">
+        <div className="white-button">
           <h3 className="explore-button">Explore Python</h3>
-        </a>
+        </div>
       </div>
       {isLoading && <CircularProgress style={{margin:"auto"}} color="secondary" />}
       <div className={styles.coursesPictures}>{coursesList}</div>

@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import CoursePage from "./pages/CoursePage";
 import { useState, createContext, useEffect } from "react";
+import Router from "./Router";
 export const dataContext = createContext();
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,14 +19,16 @@ function App() {
       })
       .catch(console.log);
   }, []);
+
   return (
     <dataContext.Provider value={{data, isLoading}}>
       <div className="App">
         <div style={{ minHeight: "100vh" }}>
-          <Routes>
+          <Router/>
+          {/* <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/course/:ID" element={<CoursePage />}></Route>
-          </Routes>
+          </Routes> */}
         </div>
       </div>
     </dataContext.Provider>
