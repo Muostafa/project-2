@@ -15,6 +15,7 @@ export default {
       category: "python",
       bestseller: true,
       ratingsSplit: [43, 37, 15, 3, 2],
+      hours:"14.5 total hours • AllLevels • Subtitles",
       learnings: [
         "Create their own Python Programs",
         "Become an experienced Python Programmer",

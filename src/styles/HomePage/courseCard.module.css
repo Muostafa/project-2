@@ -1,6 +1,8 @@
    .card{
     max-width: 242px;
     padding: 0rem 0.2rem;
+    display: flex;
+    flex-direction: column;
    }
    .link{
     text-decoration: none;
@@ -126,6 +128,8 @@
     line-height: 1;
     letter-spacing: -0.02rem;
     font-size: 11px;
+    width: 3rem;
+
   }
   .pythonArticle {
     margin-bottom: 20px;

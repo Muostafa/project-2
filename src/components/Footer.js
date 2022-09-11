@@ -1,5 +1,4 @@
 import React, { forwardRef } from "react";
-import { Box } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import styles from "../styles/footer.module.css";
 import Grid from "@mui/material/Grid";

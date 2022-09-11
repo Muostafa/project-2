@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
-  width: calc(min(15rem, 100%));
+  width: 15rem;
   margin: 0 auto;
   box-shadow: 0 -2px 4px rgb(0 0 0 / 8%), 0 -4px 12px rgb(0 0 0 / 16%);
   z-index: 2;
@@ -38,7 +38,7 @@
   flex-wrap: wrap;
   margin-top: 1rem;
 }
-.container > h3 {
+.title {
   font-size: large;
   font-weight: 700;
 }
@@ -55,10 +55,13 @@ font-size: small;
   line-height: 1.3rem;
   margin: 0.2rem 0;
 }
-
-@media only screen and (max-width: 850px) {
-  .container{
-    position: absolute;
-    display: none;
-  }
+.hours{
+  color: #6a6f73;
+  font-size: 11px;
+  margin-top: 0.6rem;
 }
+ @media only screen and (max-width: 650px) {
+  .container{
+    width: 90%;
+  }
+} 

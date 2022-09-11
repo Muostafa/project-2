@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import stars from "../../assets/stars.png";
 import styles from "../../styles/HomePage/courseCard.module.css";
 import { Link } from "react-router-dom";
 import CoursePopup from "./CoursePopup";
 function CourseCard({ course }) {
+  const cardRef = useRef();
+  useEffect(() => {
+    // console.log(cardRef.current);
+  });
   return (
-    <>
+    <div >
       <Link to={`/course/${course.id}`} className={styles.link}>
         <div className={styles.card}>
           <img
@@ -19,7 +23,7 @@ function CourseCard({ course }) {
             <h3>{course.title}</h3>
             <h6 className={styles.instructors}>{course.author}</h6>
           </article>
-          <div className={styles.courseRating}>
+          <div ref={cardRef} className={styles.courseRating}>
             <h3 className={styles.ratingNumber}>{course.rating}</h3>
             <img
               className={styles.stars}
@@ -35,11 +39,11 @@ function CourseCard({ course }) {
             <aside className={styles.bestseller}>Bestseller</aside>
           )}
           <div className={styles.popup}>
-            <CoursePopup course={course} />
+            <CoursePopup course={course} parent={cardRef}/>
           </div>
         </div>
       </Link>
-    </>
+    </div>
   );
 }
 
