@@ -4,7 +4,6 @@
     margin: 30px 10px;
   }
   .category-card {
-    overflow: hidden;
     display: flex;
     flex-direction: column;
     padding: 0 10px;
@@ -17,7 +16,7 @@
     .img-wrapper{
       margin:0;
       padding: 0;
-      overflow: hidden;
+     
     }
   .category-card img {
     height: auto;

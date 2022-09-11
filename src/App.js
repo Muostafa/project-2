@@ -1,10 +1,8 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import courses from "./pages/courses";
 import CoursePage from "./pages/CoursePage";
 import { useState, createContext, useEffect } from "react";
-import useFetch from "./hooks/useFetch";
 export const dataContext = createContext();
 function App() {
   const [isLoading, setIsLoading] = useState(true);

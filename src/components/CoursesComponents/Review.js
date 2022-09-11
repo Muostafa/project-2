@@ -22,39 +22,42 @@ const Review = ({ review }) => {
     setDislike((like) => !like);
   };
   return (
-      <div className={styles.review}>
-        <div className={styles.userInfo}>
-          <Avatar sx={{ bgcolor: "#1c1d1f", fontWeight: "600" }}>
-            {review.userInitials}
-          </Avatar>
-          <div className={styles.userTitle}>
-            <h4>{review.userTitle}</h4>
-            <div className={styles.rating}>
-              <Rating
-                style={{ fontSize: "1.1rem", margin: "0 0.5rem" }}
-                name="text-feedback"
-                value={review.rating}
-                readOnly
-                precision={0.5}
-                emptyIcon={
-                  <StarIcon
-                    className={styles.star}
-                    style={{ fontSize: "1.1rem" }}
-                  />
-                }
-              />
-              <h5 className={styles.time}>
-                {review.created_formatted_with_time_since}
-              </h5>
-            </div>
+    <div className={styles.review}>
+      <div className={styles.userInfo}>
+        <Avatar sx={{ bgcolor: "#1c1d1f", fontWeight: "600" }}>
+          {review.userInitials}
+        </Avatar>
+        <div className={styles.userTitle}>
+          <h4>{review.userTitle}</h4>
+          <div className={styles.rating}>
+            <Rating
+              style={{ fontSize: "1.1rem", margin: "0 0.5rem" }}
+              name="text-feedback"
+              value={review.rating}
+              readOnly
+              precision={0.5}
+              emptyIcon={
+                <StarIcon
+                  className={styles.star}
+                  style={{ fontSize: "1.1rem" }}
+                />
+              }
+            />
+            <h5 className={styles.time}>
+              {review.created_formatted_with_time_since}
+            </h5>
           </div>
         </div>
-        <div className={styles.content}>
-          <p>{review.content}</p>
-        </div>
-        <div className={styles.feedback} >
-          {(!like && !dislike)&&<p>Helpful?</p>}
+      </div>
+      <div className={styles.content}>
+        <p>{review.content}</p>
+      </div>
+      <div className={styles.feedback}>
+        <div>
+          {!like && !dislike && <p>Helpful?</p>}
           {(like || dislike) && <p>Thank you for feedback</p>}
+        </div>
+        <div>
           {!like && (
             <IconButton onClick={likeHandle}>
               <ThumbUpOffAltIcon />
@@ -77,6 +80,7 @@ const Review = ({ review }) => {
           )}
         </div>
       </div>
+    </div>
   );
 };
 

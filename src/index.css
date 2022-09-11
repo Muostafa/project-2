@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 html,
 .home-page {
   margin: 0px;
@@ -122,14 +123,6 @@ main {
 .course-page-contents > * {
   margin: 2rem 0;
 }
-footer {
-  display: flex;
-  color: #fff;
-  justify-content: space-between;
-  background-color: #1c1d1f;
-  width: 100%;
-  margin: auto 0 0 0;
-}
 
 @media only screen and (max-width: 1050px) {
   .webpage {
@@ -145,9 +138,6 @@ footer {
     width: 100%;
     align-items: center;
     justify-content: center;
-  }
-  footer {
-    height: 8.4rem;
   }
 }
 

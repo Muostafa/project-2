@@ -20,14 +20,13 @@
 }
 .feedback {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
 }
-.feedback > * {
+.feedback > * > * {
   color: #1c1d1f !important;
 }
-.feedback > p {
-  font-size: 0.8rem;
+.feedback > * > p {
+  font-size: 0.7rem;
 }
 .userTitle > h4 {
   margin-left: 0.7rem;
