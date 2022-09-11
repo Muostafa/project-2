@@ -14,23 +14,15 @@ function Sidebar({ course, footerRef, footerOnScreen, topContainerOnScreen }) {
     : 0;
   const sidebarStyle = {
     width: "20rem",
-    zIndex: "7",
+    zIndex: footerOnScreen ? "3" : "7",
     borderBottom: "1px solid #d1d7dc",
     boxSizing: "borderBox",
     boxShadow: "0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%)",
     backgroundColor: "white",
-    position: topContainerOnScreen ? "absolute" : "fixed",
-    top: topContainerOnScreen ? "5rem" : "0",
+    position: topContainerOnScreen || footerOnScreen ? "absolute" : "fixed",
+    top: topContainerOnScreen ? "5rem" : footerOnScreen ? footerLocation : "0",
     transform: "translateX(43rem)",
   };
-  if (topContainerOnScreen) {
-    sidebarStyle.top = "5.5rem";
-    sidebarStyle.position = "absolute";
-  } else if (footerOnScreen) {
-    sidebarStyle.position = "absolute";
-    sidebarStyle.top = footerLocation;
-    sidebarStyle.zIndex = "3";
-  }
   return (
     <div className="webpage" style={sidebarStyle}>
       {(footerOnScreen || topContainerOnScreen) && (
