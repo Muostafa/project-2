@@ -5,7 +5,7 @@ function CoursePopup({ course, parent }) {
   //get the position of the course card to determine where the popover appears
   const [parentOffset, setParentOffset] = useState(0);
   const update = () => {
-    const x = parent.current.getBoundingClientRect().left;
+    const x = parent.current?parent.current.getBoundingClientRect().left:0;
     setParentOffset(x);
     // console.log(x, window.innerWidth)
   };
